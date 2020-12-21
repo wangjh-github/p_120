@@ -25,21 +25,17 @@ let routes = [{
     children: [
       {path: '/MainPage', component: MainPage, name: '主页'},
     ]
-  },
-
-  {
+  }, {
     path: '/',
-    name: '认知干预',
+    name: '网络用户对齐',
+    leaf: true,//只有一个节点
     component: Home,
-    iconCls: 'el-icon-s-custom',
-    redirect: '/Intervention',
-    leaf: true,//只有一个节点,
+    iconCls: 'el-icon-share',
+    redirect: '/alignment',
     children: [
-      {path: '/Interventionplan', component: Interventionplan, name: '干预方案'},
-
+      {path: '/alignment', component: alignment, name: '网络用户对齐'},
     ]
-  },
-  {
+  }, {
     path: '/',
     name: '关键节点选择',
     leaf: true,//只有一个节点
@@ -50,17 +46,21 @@ let routes = [{
       {path: '/keynodeselection', component: keynodeselection, name: '关键节点选择'},
     ]
   },
+
   {
     path: '/',
-    name: '用户对齐',
-    leaf: true,//只有一个节点
+    name: '文本生成及发送',
     component: Home,
-    iconCls: 'el-icon-share',
-    redirect: '/alignment',
+    iconCls: 'el-icon-s-custom',
+    redirect: '/Intervention',
+    leaf: true,//只有一个节点,
     children: [
-      {path: '/alignment', component: alignment, name: '用户对齐'},
+      {path: '/Interventionplan', component: Interventionplan, name: '文本生成及发送'},
+
     ]
   },
+
+
   {
     path: '*',
     redirect: '/login',
