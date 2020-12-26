@@ -1,14 +1,12 @@
 <template>
   <div id="analysis" style="text-align:left;">
     <div>
-      <div id="title">
-        <h1>主页</h1>
-      </div>
+
       <div id="page">
         <div style="text-align:center; font-size:30px; height: 100px">
           <h1>敏感用户全息画像构建及个性化引导</h1>
         </div>
-        <div style="margin-top: 10%">
+        <div class="main">
           <el-row :gutter="20" style="margin-left: 5%; margin-right: 5%">
             <el-col :span="8">
               <div style="text-align: center; border-radius: 4px;">
@@ -153,9 +151,9 @@
 
   #page {
     height: 800px;
-    margin-top: 20px;
-    padding: 20px 20px 5px 20px;
-    background: #FFFFFF;
+    margin-top: 10px;
+    padding-top:20px;
+    background: #f1f3f7;
     text-align: left;
   }
 
@@ -175,5 +173,21 @@
     font-size: 80px;
     text-decoration: underline;
     background-color: green;
+  }
+
+  .main {
+    margin-top: 50px;
+    width: 85%;
+    height: 300px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+
+    border-style: solid;
+    border-width: 5px;
+    margin-left: 10%;
+    background: #ffffff;
+    color:#ffffff;
+    border-radius: 3px;
+
+    padding-top: 20px;
   }
 </style>

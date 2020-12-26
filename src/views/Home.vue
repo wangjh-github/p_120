@@ -7,7 +7,7 @@
           <img src="../assets/xjtu_logo.png" style="height: 40px; float:left" />
         </div> -->
         <img src="../assets/xjtu_logo.png" style="height: 40px;position: absolute; left: 30px; top: 10px;" />
-        <div id="title">网络用户认知干预系统</div>
+        <div id="title">敏感用户全息画像构建及个性化引导系统</div>
       </el-header>
       <el-container>
         <el-aside>
