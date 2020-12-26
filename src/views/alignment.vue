@@ -114,12 +114,16 @@
             percentage_ins_fb_copy = (graph.precision[1] * 100).toFixed(2); // twitter_fb_precision
             percentage_twi_fb_copy = (graph.precision[2] * 100).toFixed(2); //twitter_ins_precision
 
+
+
+
             document.getElementById("twi_cnt_node").innerHTML =
               "Twitter敏感用户数: " + graph.cnt_node[0].toString();
             document.getElementById("fb_cnt_node").innerHTML =
               "Facebook敏感用户数: " + graph.cnt_node[2].toString();
             document.getElementById("ins_cnt_node").innerHTML =
               "Instagram敏感用户数: " + graph.cnt_node[1].toString();
+
 
             document.getElementById("twi_ins_cnt_gnd").innerHTML =
               "Twitter-Instagram匹配准确度(" +
@@ -134,6 +138,7 @@
               graph.cnt_gnd[2].toString() +
               "对)";
 
+
             myChart.hideLoading();
             graph.nodes.forEach(function (node) {
               node.label = {
@@ -143,6 +148,15 @@
             let option = {
               tooltip: {
                 trigger: "item",
+                formatter: function(datas) 
+                {
+                    console.log(datas.data.name)
+                    var res = '用户名: ' + datas.data.name + '<br/>';
+                    res += '地址: ' + datas.data.url + '<br/>';
+                    res += '性别: ' + datas.data.gender + '<br/>';
+                    res += '常驻地: ' + datas.data.location + '<br/>';
+                    return res;
+                 }
               },
               legend: [
                 {
@@ -161,6 +175,7 @@
                   data: graph.nodes,
                   links: graph.links,
                   categories: graph.categories,
+                  focusNodeAdjacency: true,
                   itemStyle: {
                     borderColor: "#fff",
                     borderWidth: 1,
