@@ -51,15 +51,6 @@ export default {
       data_type: 'a'
     };
   },
-  /*  watch:{
-       activeName(val, oldVal){//普通的watch监听
-           console.log("activeName: "+val, oldVal);
-           if(this.activeName =='first'){
-            console.log("aaaaaaaaaaa");
-            this.myEcharts1();
-           }
-       }
-     },*/
   methods: {
     handleClick(tab, event) {
       console.log(tab, event);
@@ -73,9 +64,6 @@ export default {
       }
 
     }
-
-
-
 
   },
   mounted() {
@@ -93,7 +81,7 @@ export default {
 }
 
 #page {
-  height: 3000px;
+  height: 2500px;
   margin-top: 20px;
   padding: 20px 20px 5px 20px;
   background: #FFFFFF;
