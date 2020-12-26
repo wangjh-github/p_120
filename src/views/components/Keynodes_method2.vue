@@ -104,7 +104,35 @@ export default {
       option7:'',
       myChart7:'',
       option8:'',
-      myChart8:''
+      myChart8:'',
+      tableData1: [
+        {
+          DS:'Weibo',
+          MaxDegree:'466.30',
+          Random:'3.38',
+          Evolution:'332.06',
+          Dynamic_iso:'324.57',
+          Dynamic_iso_de:'44.91'
+        },
+        {
+          DS:'NetGROC',
+          MaxDegree:'53.42',
+          Random:'5.97',
+          Evolution:'39.50',
+          Dynamic_iso:'31.65',
+          Dynamic_iso_de:'10.85'
+        },
+        {
+          DS:'NetHepTh',
+          MaxDegree:'43.90',
+          Random:'5.20',
+          Evolution:'40.45',
+          Dynamic_iso:'34.89',
+          Dynamic_iso_de:'15.35'
+        },
+
+      ],
+    
     }
   },
   methods:{
@@ -677,6 +705,7 @@ export default {
     },
 
 
+
   },
   mounted() {
     this.connectioncase = require('../../../static/Keynodes/webkit-dep2.json');
@@ -687,6 +716,7 @@ export default {
     this.myEcharts5();
     this.myEcharts6();
     this.myEcharts7();
+
 
   }
 }
