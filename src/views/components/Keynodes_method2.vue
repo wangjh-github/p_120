@@ -2,7 +2,19 @@
   <div>
     <el-row>
       <h2>一、关键节点选择结果</h2>
-      <div id="chart1" style="width:auto;height:600px;"></div>
+      <el-col :span="14">
+        <div id="chart1" style="width:auto;height:600px;"></div>
+      </el-col>
+      <el-col :span="9">
+        <div style="width:auto;height:600px;">
+          <p style="font-size: 18px;font-weight:bold;">展示说明</p>
+          <p style="font-size: 18px">数据集：采用本方法在自构建的微博数据集和其它公开的社交网络数据集进行试验。NetGRQC 是来自斯坦福的社交数据集网页，它摘取自 arXiv 广义相对论和量子宇宙学部分；
+            NetHepTh 协作网络来自电子版 arXiv，包含了提交给高能物理-理论类别的论文之间的科学合作关系。</p>
+          <p style="font-size: 18px">实现功能：采用动态隔离法，每次隔离50个节点，在50个传播周期中，隔离间隔10个周期，共计隔离250个节点，在微博数据集中去掉重复节点后为154个节点。</p>
+          <p style="font-size: 18px">节点选择准确率：</p>
+          <p style="font-size: 18px"> 微博数据集下154位关键节点用户中共有128位为合格节点，节点选择准确率为：83.1%</p>
+        </div>
+      </el-col>
     </el-row>
     <el-row>
       <h2>二、不同隔离策略下的仿真传播</h2>
@@ -55,7 +67,7 @@
     </el-row>
     <el-row>
       <h2>三、节点选择算法性能评估</h2>
-      <h3>期望传播范围对比</h3>
+      <p>期望传播范围LIE对比:评估节点在网络中的传播能力.</p>
       <el-col :span="8">
         <div id="chart5" style="width:500px;height:500px;"></div>
       </el-col>
@@ -66,11 +78,6 @@
         <div id="chart7" style="width:500px;height:500px;"></div>
       </el-col>
     </el-row>
-    <el-row>
-      <h3>对比算法运行时间</h3>
-      <div id="chart8" style="width:auto;height:600px;"></div>
-    </el-row>
-
   </div>
 </template>
 
@@ -97,34 +104,7 @@ export default {
       option7:'',
       myChart7:'',
       option8:'',
-      myChart8:'',
-      tableData1: [
-        {
-          DS:'Weibo',
-          MaxDegree:'466.30',
-          Random:'3.38',
-          Evolution:'332.06',
-          Dynamic_iso:'324.57',
-          Dynamic_iso_de:'44.91'
-        },
-        {
-          DS:'NetGROC',
-          MaxDegree:'53.42',
-          Random:'5.97',
-          Evolution:'39.50',
-          Dynamic_iso:'31.65',
-          Dynamic_iso_de:'10.85'
-        },
-        {
-          DS:'NetHepTh',
-          MaxDegree:'43.90',
-          Random:'5.20',
-          Evolution:'40.45',
-          Dynamic_iso:'34.89',
-          Dynamic_iso_de:'15.35'
-        },
-
-        ],
+      myChart8:''
     }
   },
   methods:{
@@ -137,6 +117,9 @@ export default {
 
       this.option1 = {
         legend: {
+          orient: 'vertical',
+          x:'10%',
+          y:'5%',
           data: ['关键节点', '其它']
         },
         series: [{
@@ -693,48 +676,10 @@ export default {
 
     },
 
-    myEcharts8() {
-      this.myChart8 = this.$echarts.init(document.getElementById('chart8'));
-      this.option8={
-        legend: {},
-        tooltip: {},
-        dataset: {
-          source: [
-            ['product', 'DC', 'BC', 'CC','PR','OURS','CELF'],
-            ['NetGRQC', 0.000615, 0.5181, 0.4884,0.003498,14.54,22790],
-            ['NetHepTh', 0.000961, 2.604, 2.234,0.004236,17.29,30780],
-            ['Weibo', 0.004214,0.0654,0.08428,0.02316,5.181,15460]
-
-          ]
-        },
-        xAxis: {type: 'category'
-        },
-        yAxis: {
-          type:'log',
-        },
-
-        series: [
-          {type: 'bar'},
-          {type: 'bar'},
-          {type: 'bar'},
-          {type: 'bar'},
-          {type: 'bar'},
-          {type: 'bar'},
-
-        ]
-
-      };
-      this.myChart8.setOption(this.option8)
-
-    },
-
-
-
 
   },
   mounted() {
-    this.keynodes = require('../../../static/Keynodes/nodes.json');
-    this.connectioncase = require('../../../static/Keynodes/webkit-dep.json');
+    this.connectioncase = require('../../../static/Keynodes/webkit-dep2.json');
     this.myEcharts1();
     this.myEcharts2();
     this.myEcharts3();
@@ -742,7 +687,6 @@ export default {
     this.myEcharts5();
     this.myEcharts6();
     this.myEcharts7();
-    this.myEcharts8();
 
   }
 }
