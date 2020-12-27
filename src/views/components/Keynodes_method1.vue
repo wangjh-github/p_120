@@ -2,30 +2,41 @@
   <div>
     <el-row>
       <h2>一、关键节点选择结果</h2>
-      <el-col :span="14">
-      <div id="chart1" style="width:auto;height:600px;"></div>
-      </el-col>
-      <el-col :span="9">
-        <div style="width:auto;height:600px;">
-          <p style="font-size: 18px;font-weight:bold;">展示说明</p>
-          <p style="font-size: 18px">数据集：在乱港事件下“莫雷不当言论”主题中，选取2019-10-18 00:00:00 到 2019-10-20 23:59:59 三天共计 4320 分钟的全部微博信息，共4765名用户参与，
-            生成该网络的拓扑图如左图所示。</p>
-          <p style="font-size: 18px">实现功能：重点考虑了社交网络信息传播的动态性特征，从中找到一批对传播过程有贡献并且易于引导的关键节点（红色用户），共50位。</p>
-          <p style="font-size: 18px">节点选择准确率：</p>
-          <p style="font-size: 18px">定义微博有被转发且粉丝数≥100的用户为合格节点;</p>
-          <p style="font-size: 18px"> 节点选择准确率 = 关键节点中的合格节点 / 关键节点数;</p>
-          <p style="font-size: 18px"> 50位关键节点用户中共有36位为合格节点，节点选择准确率为：72%</p>
-        </div>
-      </el-col>
-
+      <el-container>
+        <el-aside width="950px">
+          <div id="chart1" style="width:auto;height:600px;"></div>
+        </el-aside>
+        <el-container>
+          <el-header>
+            <p style="font-size: 18px;font-weight:bold;">展示说明</p>
+          </el-header>
+          <el-main>
+            <p style="font-size: 18px">数据集：在乱港事件下“莫雷不当言论”主题中，选取2019-10-18 00:00:00 到 2019-10-20 23:59:59 三天共计 4320 分钟的全部微博信息，共4765名用户参与，
+              生成该网络的拓扑图如左图所示。</p>
+            <div style="width:auto;height:10px;"></div>
+            <p style="font-size: 18px">实现功能：重点考虑了社交网络信息传播的动态性特征，从中找到一批对传播过程有贡献并且易于引导的关键节点（红色用户），共50位。</p>
+            <div style="width:auto;height:10px;"></div>
+            <p style="font-size: 18px">节点选择准确率：</p>
+            <p style="font-size: 18px">定义微博有被转发且粉丝数≥100的用户为合格节点;</p>
+            <p style="font-size: 18px"> 节点选择准确率 = 关键节点中的合格节点 / 关键节点数;</p>
+            <p style="font-size: 18px"> 50位关键节点用户中共有36位为合格节点，节点选择准确率为：72%</p>
+          </el-main>
+        </el-container>
+      </el-container>
     </el-row>
+
     <el-row>
       <h2>二、算法性能评估</h2>
       <el-col :span="12">
-      <h3 style="text-align:center;">隔离50个最优节点后的仿真传播</h3>
-        <div id="chart2" style="width:auto;height:700px;"></div>
+        <div class="box">
+          <div class="box-title">
+            <p class="box-title-value" style="text-align:center;">隔离50个最优节点后的仿真传播</p>
+          </div>
+          <div class="box-content">
+            <div id="chart2" style="width:auto;height:700px;"></div>
+          </div>
+        </div>
       </el-col>
-
       <el-col :span="11">
       <h3 style="text-align:center;">关键节点选择算法效果</h3>
         <el-table
@@ -88,18 +99,21 @@
             width="180">
           </el-table-column>
         </el-table>
-
-
       </el-col>
-
     </el-row>
+
     <el-row>
-      <div style="margin-left:10%;margin-top:100px">
-        <p style="font-size: 18px;font-weight:bold;">展示说明</p>
-    <p style="font-size: 18px">隔离 50 个效率最优节点后，传播节点数目整体呈减少趋势，在传播结束的时刻，传播节点减少了 116 个。</p>
-    <p style="font-size: 18px">与网络中其它四个节点度与关键节点集合𝑄中所有节点度之和相近的节点进行对比试验，最优效率法在隔离效率上远远高于单节点的隔离。</p>
-    <p style="font-size: 18px">与几个经典算法作对比实验，考虑效率这个在引导过程中的关键因素，最有效率算法性能比其他方法更优。</p>
-    </div>
+      <el-container>
+        <el-footer height=200px>
+          <div style="margin-left:2%">
+            <p style="font-size: 18px;font-weight:bold;">展示说明</p>
+            <p style="font-size: 18px">隔离 50 个效率最优节点后，传播节点数目整体呈减少趋势，在传播结束的时刻，传播节点减少了 116 个。</p>
+            <p style="font-size: 18px">与网络中其它四个节点度与关键节点集合𝑄中所有节点度之和相近的节点进行对比试验，最优效率法在隔离效率上远远高于单节点的隔离。</p>
+            <p style="font-size: 18px">与几个经典算法作对比实验，考虑效率这个在引导过程中的关键因素，最有效率算法性能比其他方法更优。</p>
+          </div>
+          </el-footer>
+      </el-container>
+
     </el-row>
   </div>
 </template>
@@ -432,5 +446,105 @@ export default {
 }
 </script>
 <style>
+.el-footer {
+  background-color: #B3C0D1;
+  color: #333;
+}
+</style>
+<style scoped>
+#title h1 {
+  font-weight: normal;
+  font-size: 170%;
+  margin: 0;
+  padding: 0;
+}
+
+#page {
+  height: 1500px;
+  margin-top: 20px;
+  padding: 20px 20px 5px 20px;
+  background: #FFFFFF;
+  text-align: left;
+}
+
+.box {
+  border: 1px solid #eee;
+  height: 550px;
+  width: 98%;
+  margin-right: 2%;
+}
+
+.box-title {
+  background: #dde3ef;
+  height: 20px;
+  padding: 10px 0;
+}
+
+.box-title-value {
+  margin-top: 0px;
+  margin-left: 10px;
+  text-indent: 4px;
+  color: #666;
+  font-size: 16px;
+}
+
+
+
+.box-content {
+  width: 100%;
+  height: 500px;
+
+}
+
+
+.title {
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+  margin: 0;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.number {
+  font-size: 30px;
+  color: white;
+  margin: 0;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#totle_posts {
+  background: #EF6191
+}
+
+#totle_posts:hover {
+  background: #EC407A
+}
+
+#totle_comments {
+  background: #C076CD
+}
+
+#totle_comments:hover {
+  background: #AB47BC
+}
+
+#totle_preference {
+  background: #4DABF5
+}
+
+#totle_preference:hover {
+  background: #2196F3
+}
+
+#upvoted {
+  background: #35ACA1
+}
+
+#upvoted:hover {
+  background: #009688
+}
+
 </style>
 

@@ -2,31 +2,59 @@
   <div>
     <el-row>
       <h2>一、关键节点选择结果</h2>
-      <el-col :span="14">
-        <div id="chart1" style="width:auto;height:600px;"></div>
-      </el-col>
-      <el-col :span="9">
-        <div style="width:auto;height:600px;">
-          <p style="font-size: 18px;font-weight:bold;">展示说明</p>
-          <p style="font-size: 18px">数据集：采用本方法在自构建的微博数据集和其它公开的社交网络数据集进行试验。NetGRQC 是来自斯坦福的社交数据集网页，它摘取自 arXiv 广义相对论和量子宇宙学部分；
-            NetHepTh 协作网络来自电子版 arXiv，包含了提交给高能物理-理论类别的论文之间的科学合作关系。</p>
-          <p style="font-size: 18px">实现功能：采用动态隔离法，每次隔离50个节点，在50个传播周期中，隔离间隔10个周期，共计隔离250个节点，在微博数据集中去掉重复节点后为154个节点。</p>
-          <p style="font-size: 18px">节点选择准确率：</p>
-          <p style="font-size: 18px"> 微博数据集下154位关键节点用户中共有128位为合格节点，节点选择准确率为：83.1%</p>
-        </div>
-      </el-col>
+      <el-container>
+        <el-aside width="950px">
+          <div id="chart1" style="width:auto;height:600px;"></div>
+        </el-aside>
+        <el-container>
+          <el-header>
+            <p style="font-size: 18px;font-weight:bold;">展示说明</p>
+          </el-header>
+          <el-main>
+            <p style="font-size: 18px">数据集：采用本方法在自构建的微博数据集和其它公开的社交网络数据集进行试验。NetGRQC 是来自斯坦福的社交数据集网页，它摘取自 arXiv 广义相对论和量子宇宙学部分；
+              NetHepTh 协作网络来自电子版 arXiv，包含了提交给高能物理-理论类别的论文之间的科学合作关系。</p>
+            <div style="width:auto;height:20px;"></div>
+            <p style="font-size: 18px">实现功能：采用动态隔离法，每次隔离50个节点，在50个传播周期中，隔离间隔10个周期，共计隔离250个节点，在微博数据集中去掉重复节点后为154个节点。</p>
+            <div style="width:auto;height:20px;"></div>
+            <p style="font-size: 18px">节点选择准确率：</p>
+            <p style="font-size: 18px"> 微博数据集下154位关键节点用户中共有128位为合格节点，节点选择准确率为：83.1%</p>
+          </el-main>
+        </el-container>
+      </el-container>
     </el-row>
     <el-row>
       <h2>二、不同隔离策略下的仿真传播</h2>
       <el-col :span="8">
-        <div id="chart2" style="width:500px;height:500px;"></div>
+        <div class="box">
+          <div class="box-title">
+            <p class="box-title-value">Weibo数据集（传播率0.005，隔离数50）</p>
+          </div>
+          <div class="box-content">
+            <div id="chart2" style="width:500px;height:500px;"></div>
+          </div>
+        </div>
       </el-col>
       <el-col :span="8">
-        <div id="chart3" style="width:500px;height:500px;"></div>
+        <div class="box">
+          <div class="box-title">
+            <p class="box-title-value">NetGRQC数据集（传播率0.01，隔离数50）</p>
+          </div>
+          <div class="box-content">
+            <div id="chart3" style="width:500px;height:500px;"></div>
+          </div>
+        </div>
       </el-col>
       <el-col :span="8">
-        <div id="chart4" style="width:500px;height:500px;"></div>
+        <div class="box">
+          <div class="box-title">
+            <p class="box-title-value">NetHepTh数据集（传播率0.005，隔离数50）</p>
+          </div>
+          <div class="box-content">
+            <div id="chart4" style="width:500px;height:500px;"></div>
+          </div>
+        </div>
       </el-col>
+
     </el-row>
     <el-row>
       <h2 style="text-align:center;">四种隔离策略的平均隔离成本表</h2>
@@ -69,13 +97,34 @@
       <h2>三、节点选择算法性能评估</h2>
       <p>期望传播范围LIE对比:评估节点在网络中的传播能力.</p>
       <el-col :span="8">
-        <div id="chart5" style="width:500px;height:500px;"></div>
+        <div class="box">
+          <div class="box-title">
+            <p class="box-title-value">NetGRQC数据集（传播率0.05）</p>
+          </div>
+          <div class="box-content">
+            <div id="chart5" style="width:500px;height:500px;"></div>
+          </div>
+        </div>
       </el-col>
       <el-col :span="8">
-        <div id="chart6" style="width:500px;height:500px;"></div>
+        <div class="box">
+          <div class="box-title">
+            <p class="box-title-value">NetHepTh数据集（传播率0.05）</p>
+          </div>
+          <div class="box-content">
+            <div id="chart6" style="width:500px;height:500px;"></div>
+          </div>
+        </div>
       </el-col>
       <el-col :span="8">
-        <div id="chart7" style="width:500px;height:500px;"></div>
+        <div class="box">
+          <div class="box-title">
+            <p class="box-title-value">Weibo数据集（传播率0.05）</p>
+          </div>
+          <div class="box-content">
+            <div id="chart7" style="width:500px;height:500px;"></div>
+          </div>
+        </div>
       </el-col>
     </el-row>
   </div>
@@ -132,7 +181,7 @@ export default {
         },
 
       ],
-    
+
     }
   },
   methods:{
@@ -182,9 +231,7 @@ export default {
     myEcharts2() {
       this.myChart2 = this.$echarts.init(document.getElementById('chart2'));
       this.option2 = {
-        title: {
-          text: 'Weibo数据集（传播率0.005，隔离数50）'
-        },
+
         tooltip: {
           trigger: 'axis'
         },
@@ -211,7 +258,7 @@ export default {
           },
         },
         yAxis: {
-          name:'传播节点的减少量',
+          name:'  传播节点的减少量',
           type: 'value',
           splitLine: {
             show: false
@@ -274,9 +321,7 @@ export default {
         data4.push([xdata[j],ydata4[j]]);
       }
       this.option3 = {
-        title: {
-          text: 'NetGRQC数据集（传播率0.01，隔离数50）'
-        },
+
         tooltip: {
           trigger: 'axis'
         },
@@ -303,7 +348,7 @@ export default {
           },
         },
         yAxis: {
-          name:'传播节点的减少量',
+          name:'  传播节点的减少量',
           type: 'value',
           splitLine: {
             show: false
@@ -354,9 +399,7 @@ export default {
         data4.push([xdata[j],ydata4[j]]);
       }
       this.option4 = {
-        title: {
-          text: 'NetHepTh数据集（传播率0.005，隔离数50）'
-        },
+
         tooltip: {
           trigger: 'axis'
         },
@@ -440,9 +483,7 @@ export default {
         data6.push([xdata[j],ydata6[j]]);
       }
       this.option5 = {
-        title: {
-          text: 'NetGRQC数据集（传播率0.05）'
-        },
+
         tooltip: {
           trigger: 'axis'
         },
@@ -536,9 +577,7 @@ export default {
         data6.push([xdata[j],ydata6[j]]);
       }
       this.option6 = {
-        title: {
-          text: 'NetHepTh数据集（传播率0.05）'
-        },
+
         tooltip: {
           trigger: 'axis'
         },
@@ -632,9 +671,6 @@ export default {
         data6.push([xdata[j],ydata6[j]]);
       }
       this.option7 = {
-        title: {
-          text: 'Weibo数据集（传播率0.05）'
-        },
         tooltip: {
           trigger: 'axis'
         },
@@ -722,5 +758,131 @@ export default {
 }
 </script>
 <style>
+.el-header, .el-footer {
+  background-color: #B3C0D1;
+  color: #333;
+  text-align: center;
+}
+
+.el-aside {
+  background-color: Transparent;
+  color: #333;
+  text-align: center;
+
+}
+
+.el-main {
+  background-color: #DCDFE6;
+  color: #333;
+}
+
+body > .el-container {
+  margin-bottom: 40px;
+}
+
+.el-container:nth-child(5) .el-aside,
+.el-container:nth-child(6) .el-aside {
+  line-height: 260px;
+}
+
+.el-container:nth-child(7) .el-aside {
+  line-height: 320px;
+}
+</style>
+<style scoped>
+#title h1 {
+  font-weight: normal;
+  font-size: 170%;
+  margin: 0;
+  padding: 0;
+}
+
+#page {
+  height: 1500px;
+  margin-top: 20px;
+  padding: 20px 20px 5px 20px;
+  background: #FFFFFF;
+  text-align: left;
+}
+
+.box {
+  border: 1px solid #eee;
+  height: 550px;
+  width: 98%;
+  margin-right: 2%;
+}
+
+.box-title {
+  background: #dde3ef;
+  height: 20px;
+  padding: 10px 0;
+}
+
+.box-title-value {
+  margin-top: 0px;
+  margin-left: 10px;
+  text-indent: 4px;
+  color: #666;
+  font-size: 16px;
+}
+
+
+
+.box-content {
+  width: 100%;
+  height: 500px;
+
+}
+
+
+.title {
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+  margin: 0;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.number {
+  font-size: 30px;
+  color: white;
+  margin: 0;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#totle_posts {
+  background: #EF6191
+}
+
+#totle_posts:hover {
+  background: #EC407A
+}
+
+#totle_comments {
+  background: #C076CD
+}
+
+#totle_comments:hover {
+  background: #AB47BC
+}
+
+#totle_preference {
+  background: #4DABF5
+}
+
+#totle_preference:hover {
+  background: #2196F3
+}
+
+#upvoted {
+  background: #35ACA1
+}
+
+#upvoted:hover {
+  background: #009688
+}
+
 </style>
 
