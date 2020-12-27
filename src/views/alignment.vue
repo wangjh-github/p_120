@@ -125,7 +125,7 @@
                 prop="tag"
                 label="标签"
                 width="100"
-                :filters="[{ text: '家', value: '家' }, { text: '公司', value: '公司' }]"
+                :filters="[{ text: '乱港分子', value: '乱港分子' }, { text: '乱港团体', value: '乱港团体' }, { text: '美国大选', value: '美国大选' }]"
                 :filter-method="filterTag"
                 filter-placement="bottom-end">
                 <template slot-scope="scope">
