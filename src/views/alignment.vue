@@ -13,61 +13,134 @@
         text-align: left;
       ">
       <el-tabs v-model="activeName" @tab-click="handleClick">
-        <el-container>
-          <el-aside width="55%" style>
-            <div id="evaluation_chart" style="
-                text-align: center;
-                width: auto;
-                margin-top: 20px;
-                margin-bottom: 15px;
-                width: 100%;
-                height: 650px;
-              ">
-              <div id="main1" style="width: 600px; height: 500px; display: inline-block"></div>
-              <div id="main2" style="
-                  width: 600px;
-                  height: 120px;
-                  line-height: 120px;
-                  display: inline-block;
+        <el-tab-pane label="跨平台对齐" name="first">
+          <el-container style="height: 700px;">
+
+            <el-aside width="55%" style>
+              <div id="evaluation_chart" style="
+                  text-align: center;
+                  width: auto;
+                  margin-top: 20px;
+                  margin-bottom: 15px;
+                  width: 100%;
+                  height: 650px;
                 ">
-                <el-button v-on:click="run_alignment" type="primary" round>开始匹配</el-button>
+                <div id="main1" style="width: 600px; height: 500px; display: inline-block;"></div>
+                <div id="main2" style="
+                    width: 600px;
+                    height: 120px;
+                    line-height: 120px;
+                    display: inline-block;
+                  ">
+                  <el-button v-on:click="run_alignment" type="primary" round>开始匹配</el-button>
+                </div>
               </div>
-            </div>
-          </el-aside>
-          <el-main width="45%" style>
-            <div id style="
-                text-align: center;
-                width: 90%;
-                height: 130px;
-                font-size: 18px;
-              ">
-              <p id="twi_cnt_node">Twitter敏感用户数: 111</p>
-              <p id="fb_cnt_node">Facebook敏感用户数: 47</p>
-              <p id="ins_cnt_node">Instagram敏感用户数: 40</p>
-            </div>
+            </el-aside>
 
-            <div id style="text-align: center; width: 90%; height: 140px">
-              <p id="twi_fb_cnt_gnd" style="font-size: 18px">
-                Twitter-Facebook匹配准确度
-              </p>
-              <el-progress width="80" type="circle" :percentage="this.percentage_twi_fb"></el-progress>
-            </div>
+            <el-main width="45%" style>
+              <div id style="
+                  text-align: center;
+                  width: 90%;
+                  height: 130px;
+                  font-size: 18px;
+                ">
+                <p id="twi_cnt_node">Twitter敏感用户数: 111</p>
+                <p id="fb_cnt_node">Facebook敏感用户数: 47</p>
+                <p id="ins_cnt_node">Instagram敏感用户数: 40</p>
+              </div>
 
-            <div id style="text-align: center; width: 90%; height: 140px">
-              <p id="twi_ins_cnt_gnd" style="font-size: 18px">
-                Twitter-Instagram匹配准确度
-              </p>
-              <el-progress width="80" type="circle" :percentage="percentage_twi_ins"></el-progress>
-            </div>
+              <div id style="text-align: center; width: 90%; height: 140px">
+                <p id="twi_fb_cnt_gnd" style="font-size: 18px">
+                  Twitter-Facebook匹配准确度
+                </p>
+                <el-progress width="80" type="circle" :percentage="this.percentage_twi_fb"></el-progress>
+              </div>
 
-            <div id style="text-align: center; width: 90%; height: 140px">
-              <p id="ins_fb_cnt_gnd" style="font-size: 18px">
-                Instagram-Facebook匹配准确度
-              </p>
-              <el-progress width="80" type="circle" :percentage="percentage_ins_fb"></el-progress>
-            </div>
-          </el-main>
-        </el-container>
+              <div id style="text-align: center; width: 90%; height: 140px">
+                <p id="twi_ins_cnt_gnd" style="font-size: 18px">
+                  Twitter-Instagram匹配准确度
+                </p>
+                <el-progress width="80" type="circle" :percentage="percentage_twi_ins"></el-progress>
+              </div>
+
+              <div id style="text-align: center; width: 90%; height: 140px">
+                <p id="ins_fb_cnt_gnd" style="font-size: 18px">
+                  Instagram-Facebook匹配准确度
+                </p>
+                <el-progress width="80" type="circle" :percentage="percentage_ins_fb"></el-progress>
+              </div>
+            </el-main>
+
+          </el-container>
+        </el-tab-pane>
+
+        <el-tab-pane label="案例分析" name="second" trigger="click">
+          <el-container style="height: 700px;">
+            <el-table
+              ref="filterTable"
+              :data="tableData"
+              style="width: 100%">
+              <el-table-column
+                prop="platform"
+                label="平台"
+                sortable
+                width="180"
+                column-key="platform"
+                :filters="[{text: 'Twitter', value: 'Twitter'}, {text: 'Instagram', value: 'Instagram'}, {text: 'Facebook', value: 'Facebook'}]"
+                :filter-method="filterHandler"
+              >
+              </el-table-column>
+
+              <el-table-column
+                prop="name"
+                label="姓名"
+                width="180">
+              </el-table-column>
+
+              <el-table-column
+                prop="username"
+                label="用户名"
+                width="180">
+              </el-table-column>
+
+              <el-table-column
+                prop="address"
+                label="地址"
+                :formatter="formatter">
+              </el-table-column>
+
+              <el-table-column
+                prop="url"
+                label="网址"
+                width="180">
+              </el-table-column>
+
+              <el-table-column
+                prop="job"
+                label="职业"
+                width="180">
+              </el-table-column>
+
+              <el-table-column
+                prop="tag"
+                label="标签"
+                width="100"
+                :filters="[{ text: '家', value: '家' }, { text: '公司', value: '公司' }]"
+                :filter-method="filterTag"
+                filter-placement="bottom-end">
+                <template slot-scope="scope">
+                  <el-tag
+                    :type="scope.row.tag === '家' ? 'primary' : 'success'"
+                    disable-transitions>{{scope.row.tag}}</el-tag>
+                </template>
+              </el-table-column>
+
+            </el-table>
+
+          </el-container>
+        </el-tab-pane>
+
+
       </el-tabs>
     </div>
   </div>
@@ -93,13 +166,84 @@
     name: "Echarts",
     data() {
       return {
-        activeName: "aaa",
+        activeName: 'first',
         percentage_twi_fb: 0,
         percentage_twi_ins: 0,
         percentage_ins_fb: 0,
+        tableData: [{
+          platform: 'Twitter',
+          name: '黄之锋',
+          username: 'joshuawongcf',
+          address: 'Hong Kong',
+          url: 'https://twitter.com/joshuawongcf',
+          job: '学生',
+          tag:'乱港分子',
+        }, {
+          platform: 'Twitter',
+          name: '特朗普',
+          username: 'realDonaldTrump',
+          address: 'Washington, D.C.',
+          url: 'https://twitter.com/realDonaldTrump',
+          job: '政治家',
+          tag:'美国大选',
+        }, {
+          platform: 'Instagram',
+          name: '郑家朗',
+          username: 'isaac_cheng_ckl',
+          address: 'Hong Kong',
+          url: 'https://www.instagram.com/isaac_cheng_ckl/',
+          job: '学生',
+          tag:'乱港分子',
+        }, {
+          platform: 'Instagram',
+          name: 'Stand with HK@JPN',
+          username: 'standwithhk_jpn',
+          address: 'Hong Kong',
+          url: 'https://www.instagram.com/standwithhk_jpn/',
+          job: '团体',
+          tag:'乱港团体',
+        },
+        {
+          platform: 'Instagram',
+          name: '黃之鋒',
+          username: 'joshua1013',
+          address: 'Hong Kong',
+          url: 'https://www.instagram.com/joshua1013/',
+          job: '学生',
+          tag:'乱港分子',
+        },
+        {
+          platform: 'Instagram',
+          name: '梁凱晴',
+          username: 'leunghoichinglhc',
+          address: 'Hong Kong',
+          url: 'https://www.instagram.com/raywty/',
+          job: '学生',
+          tag:'乱港分子',
+        },
+        ]
+
       };
     },
     methods: {
+        resetDateFilter: function () {
+          this.$refs.filterTable.clearFilter('date');
+        },
+
+        clearFilter: function() {
+          this.$refs.filterTable.clearFilter();
+        },
+        formatter: function(row, column) {
+          return row.address;
+        },
+        filterTag: function(value, row) {
+          return row.tag === value;
+        },
+        filterHandler: function(value, row, column) {
+          const property = column['property'];
+          return row[property] === value;
+        },
+
       run_alignment: function ($this) {
         let echarts = require("echarts");
         let myChart = echarts.init(document.getElementById("main1"));
