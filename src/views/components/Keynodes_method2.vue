@@ -11,11 +11,9 @@
             <p style="font-size: 18px;font-weight:bold;">展示说明</p>
           </el-header>
           <el-main>
-            <p style="font-size: 18px">数据集：采用本方法在自构建的微博数据集和其它公开的社交网络数据集进行试验。NetGRQC 是来自斯坦福的社交数据集网页，它摘取自 arXiv 广义相对论和量子宇宙学部分；
+            <p style="font-size: 18px">数据集：在乱港事件下“莫雷不当言论”主题中，选取2019-10-18 00:00:00 到 2019-10-20 23:59:59 三天共计 4320 分钟的全部微博信息，共4765名用户参与，生成该网络的拓扑图如左图所示；此外，还采用本方法在两个公开数据集上进行对比实验，NetGRQC 是来自斯坦福的社交数据集网页，它摘取自 arXiv 广义相对论和量子宇宙学部分；
               NetHepTh 协作网络来自电子版 arXiv，包含了提交给高能物理-理论类别的论文之间的科学合作关系。</p>
-            <div style="width:auto;height:20px;"></div>
-            <p style="font-size: 18px">实现功能：采用动态隔离法，每次隔离50个节点，在50个传播周期中，隔离间隔10个周期，共计隔离250个节点，在微博数据集中去掉重复节点后为154个节点。</p>
-            <div style="width:auto;height:20px;"></div>
+            <p style="font-size: 18px">实现效果：在实际应用场景，舆情信息在社交网络上的传播过程不是无约束的。在多数在线社交平台上，敏感用户往往会被删帖、移除账号，敏感事件主题会被限制内容转发或者直接被删除话题。本方法在经典传染病模型 SIR 的基础 上扩充了节点状态，提出了一种动态隔离信息传播环境 SIRQU。在微博数据集中，采用一种新的进化搜索策略，每次选择50个节点进行隔离，在50个传播周期中，每次隔离间隔10个周期，共计隔离5次250个节点，去掉重复节点后为154个节点。</p>
             <p style="font-size: 18px">节点选择准确率：</p>
             <p style="font-size: 18px"> 微博数据集下154位关键节点用户中共有128位为合格节点，节点选择准确率为：83.1%</p>
           </el-main>
@@ -758,7 +756,7 @@ export default {
 }
 </script>
 <style>
-.el-header, .el-footer {
+.el-header {
   background-color: #B3C0D1;
   color: #333;
   text-align: center;
@@ -774,6 +772,11 @@ export default {
 .el-main {
   background-color: #DCDFE6;
   color: #333;
+}
+.el-footer{
+  background-color: #B3C0D1;
+  color: #333;
+  text-align: left;
 }
 
 body > .el-container {
