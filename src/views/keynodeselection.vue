@@ -5,32 +5,18 @@
     </div>
     <div id="page">
       <el-tabs v-model="activeName" @tab-click="handleClick">
-        <el-tab-pane label="功能说明" name="first">
-          <Keynodes_function v-if="'first' === activeName"></Keynodes_function>
+        <el-tab-pane label="方法一：最优效率节点选择算法" name="first">
+          <keynodes_method1 v-if="'first' === activeName"></keynodes_method1>
         </el-tab-pane>
-        <el-tab-pane label="效果展示" name="second">
-          <el-dropdown trigger="click" @command="handleCommand">
-            <el-button type="primary">
-              <div id='data_lable' style="font-size: 18px">关键节点选择方法<i class='el-icon-arrow-down el-icon--right'></i></div>
-            </el-button>
-            <el-dropdown-menu slot="dropdown">
-              <el-dropdown-item command="a" style="font-size: 18px">最优效率节点选择算法</el-dropdown-item>
-              <el-dropdown-item command="b" style="font-size: 18px">基于动态隔离策略的节点选择</el-dropdown-item>
-            </el-dropdown-menu>
-          </el-dropdown>
-          <div v-if="data_type == 'a'">
-            <Keynodes_method1></Keynodes_method1>
-          </div>
-          <div v-if="data_type == 'b'" style="margin-top:30px">
-            <Keynodes_method2></Keynodes_method2>
-          </div>
+        <el-tab-pane label="方法二：基于动态隔离策略的节点选择" name="second">
+          <keynodes_method2 v-if="'second' === activeName"></keynodes_method2>
         </el-tab-pane>
       </el-tabs>
     </div>
   </div>
 </template>
 <script>
-import Keynodes_function from './components/Keynodes_function'
+
 
 import Keynodes_method1 from "./components/Keynodes_method1";
 import Keynodes_method2 from "./components/Keynodes_method2";
@@ -38,7 +24,7 @@ import Keynodes_method2 from "./components/Keynodes_method2";
 
 export default {
   components: {
-    "Keynodes_function": Keynodes_function,
+
 
     "Keynodes_method1":Keynodes_method1,
     "Keynodes_method2":Keynodes_method2,
@@ -48,22 +34,11 @@ export default {
   data() {
     return {
       activeName: 'first',
-      data_type: 'a'
+
     };
   },
   methods: {
-    handleClick(tab, event) {
-      console.log(tab, event);
-    },
-    handleCommand(command) {
-      this.data_type = command;
-      if (command == 'a') {
-        document.getElementById("data_lable").innerHTML = "最优效率节点选择算法<i class='el-icon-arrow-down el-icon--right'></i>";
-      } else if (command == 'b') {
-        document.getElementById("data_lable").innerHTML = "基于动态隔离策略的节点选择<i class='el-icon-arrow-down el-icon--right'></i>";
-      }
 
-    }
 
   },
   mounted() {
