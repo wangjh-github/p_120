@@ -11,15 +11,13 @@
             <p style="font-size: 18px;font-weight:bold;">展示说明</p>
           </el-header>
           <el-main>
-            <p style="font-size: 18px">数据集：在乱港事件下“莫雷不当言论”主题中，选取2019-10-18 00:00:00 到 2019-10-20 23:59:59 三天共计 4320 分钟的全部微博信息，共4765名用户参与，
-              生成该网络的拓扑图如左图所示。</p>
-            <div style="width:auto;height:10px;"></div>
-            <p style="font-size: 18px">实现功能：重点考虑了社交网络信息传播的动态性特征，从中找到一批对传播过程有贡献并且易于引导的关键节点（红色用户），共50位。</p>
-            <div style="width:auto;height:10px;"></div>
+            <p style="font-size: 18px">关键节点：很多研究工作把关键节点定义为在社交网络中能够使得信息传播到更多用户的节点。与病毒式营销和谣言的抑制不同，本方法面向社交网络中的舆情事件，不同于社交网络中意见领袖的发现（如微博大V），本方法的目的是找到一批相对比较容易引导的节点，采用收益（用户影响力）与引导成本（用户粉丝数）之比衡量； </p>
+            <p style="font-size: 18px">数据集：在乱港事件下“莫雷不当言论”主题中，选取2019-10-18 00:00:00 到 2019-10-20 23:59:59 三天共计 4320 分钟的全部微博信息，共4765名用户参与，生成该网络的拓扑图如左图所示；</p>
+            <p style="font-size: 18px">实现效果：重点考虑了社交网络信息传播的动态性特征，对事件传播过程进行建模，采用基于引导成本与收益比的效率优先的贪心节点选择方法，从中找到一批对传播过程有贡献并且易于引导的关键节点（红色用户），共50位；</p>
             <p style="font-size: 18px">节点选择准确率：</p>
-            <p style="font-size: 18px">定义微博有被转发且粉丝数≥100的用户为合格节点;</p>
+            <p style="font-size: 18px">本方法采用收益成本比作为衡量标准进行关键节点选择，节点集合整体效率最优，但其中少量收益甚微的节点由于粉丝数量过少，导致其收益成本比较高。因此定义微博有被转发且粉丝数≥100的用户为合格节点;</p>
             <p style="font-size: 18px"> 节点选择准确率 = 关键节点中的合格节点 / 关键节点数;</p>
-            <p style="font-size: 18px"> 50位关键节点用户中共有36位为合格节点，节点选择准确率为：72%</p>
+            <p style="font-size: 18px"> 50位关键节点用户中共有36位为合格节点，节点选择准确率为：72%。</p>
           </el-main>
         </el-container>
       </el-container>
@@ -113,7 +111,6 @@
           </div>
           </el-footer>
       </el-container>
-
     </el-row>
   </div>
 </template>
@@ -446,9 +443,40 @@ export default {
 }
 </script>
 <style>
-.el-footer {
+.el-header {
   background-color: #B3C0D1;
   color: #333;
+  text-align: center;
+}
+
+.el-aside {
+  background-color: Transparent;
+  color: #333;
+  text-align: center;
+
+}
+
+.el-main {
+  background-color: #DCDFE6;
+  color: #333;
+}
+.el-footer{
+  background-color: #B3C0D1;
+  color: #333;
+  text-align: left;
+}
+
+body > .el-container {
+  margin-bottom: 40px;
+}
+
+.el-container:nth-child(5) .el-aside,
+.el-container:nth-child(6) .el-aside {
+  line-height: 260px;
+}
+
+.el-container:nth-child(7) .el-aside {
+  line-height: 320px;
 }
 </style>
 <style scoped>
