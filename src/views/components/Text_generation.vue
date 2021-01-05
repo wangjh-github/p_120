@@ -177,13 +177,17 @@ export default {
     else{
       langkey = "cht"
     }
-    if (this.emotion == "正向"){
-      emokey = "pos";
-      txtcount=50;
+    if (this.emotion == "分面1：暴乱"){
+      emokey = "violent";
+      txtcount=16;
+    }
+    else if (this.emotion == "分面2：香港青年"){
+      emokey = "young";
+      txtcount=16;
     }
     else{
-      emokey = "neg";
-      txtcount=19;
+      emokey = "five_eyes";
+      txtcount=21;
     }
     this.listObj = txtjson[langkey][emokey];
     console.log(this.listObj) 
