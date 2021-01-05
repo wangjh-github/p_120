@@ -15,9 +15,8 @@
             <div style="height: 700px; width:99.9%; border:1px solid #DCDFE6">
               <div style="height: 500px; width:905px;margin-top:3%;margin-left:25%">
                 <div>
-                  <el-table ref="multipleTable" border :data="tableData" tooltip-effect="dark" style="width: 100%;font-size: 18px" @selection-change="handleSelectionChange">
-                    <el-table-column type="selection" width="55">
-                    </el-table-column>
+                  <el-table ref="singleTable" border :data="tableData" tooltip-effect="dark" highlight-current-row style="width: 100%;font-size: 18px" @current-change="handleSelectionChange">
+                    
                     <el-table-column label="用户" width="120">
                       <template slot-scope="scope">{{ scope.row.user }}</template>
                     </el-table-column>
@@ -38,9 +37,15 @@
             </div>
           </div>
           <div class="all" v-if="sel === 2">
-            <div style="height: 700px; width:99.9%; border:1px solid #DCDFE6">
-              <input type="button" class="emotion" id="positive" value="正向" style="margin:13% 25%" @click="positive(item)">
-              <input type="button" class="emotion" id="negative" value="负向" @click="negative(item)">
+            <div style="height: 700px; width:99.9%; border:1px solid #DCDFE6;">
+              <input type="button" class="emotion" id="part1" value="分面1：暴乱" style="margin:7% 17%" @click="part1(item)">
+              <input type="button" class="emotion" id="part2" value="分面2：香港青年" @click="part2(item)">
+              <input type="button" class="emotion" id="part3" value="分面3：五眼联盟"style="margin:7% 16%"  @click="part3(item)">
+              <div>
+              <el-tag class="description" style="margin:-3% 10%;padding-top:15px;;">自2019年6月以来，反中乱港势力借反修例之名发动旷日持久的黑色暴乱。修例风波本质上是由反中乱港势力借题发挥、内外勾连策动的“颜色革命”，其目标就是企图颠覆香港秩序，夺取特区管治权，妄图阻碍中国发展。</el-tag>
+              <el-tag class="description" style="margin-left:34%; margin-top:-3%;padding-top:15px;">令人担忧的是，反中乱港势力鼓吹“违法达义”等歪理邪说，诱导青少年以暴力抗争来表达诉求，为达目的不惜毁掉年轻人的前程。警方资料显示，2019年6月至12月底，已有近2600名学生被捕，约占总被捕人数的4成。</el-tag>
+              <el-tag class="description" style="margin-left:58%;margin-top:-3%;">当地时间2020年11月18日，澳大利亚、英国、加拿大、新西兰、美国外长发表联合声明干涉中国内政，妄称香港特区政府依法裁定4名反中乱港者丧失立法会议员资格的行为违反《中英联合声明》中所规定的具有法律约束力的国际义务，违背对香港‘高度自治’的承诺，以及违背‘言论自由’的权利”。</el-tag>
+              </div>
             </div>
           </div>
           <div class="all" v-if="sel === 3">
@@ -145,9 +150,9 @@ export default {
         positive_percentage: '55.75',
         emotion: '中立'
       }],
-      multipleSelection: [],
-      users: [],
-      language: [],
+      multipleSelection: {},
+      users: "",
+      language: "",
     }
   },
   methods: {
@@ -156,15 +161,12 @@ export default {
     },
     chooseusers(item) {
       this.sel = 2;
-      this.users = [];
-      this.language = [];
-      var arr = this.multipleSelection;
-      for (var i = 0; i < arr.length; i++) {
-        this.users.push(arr[i].user);
-        this.language.push(arr[i].language);
-      }
+      this.users = "";
+      this.language = "";
+      this.users = this.multipleSelection.user;
+      this.language = this.multipleSelection.language;
     },
-    positive(item) {
+    part1(item) {
       const loading = this.$loading({
           lock: true,
           text: '文本生成中',
@@ -175,7 +177,7 @@ export default {
         setTimeout(() => {
           loading.close();
           this.sel = 3;
-          this.emotion = '正向';
+          this.emotion = '分面1：暴乱';
           this.$alert('', '文本生成完成，耗时'+secnum.toString()+'秒', {
             confirmButtonText: '确定',
             callback: action => {
@@ -188,7 +190,7 @@ export default {
         }, secnum*1000); 
     },
 
-    negative(item) {
+    part2(item) {
       const loading = this.$loading({
           lock: true,
           text: '文本生成中',
@@ -199,7 +201,7 @@ export default {
         setTimeout(() => {
           loading.close();
           this.sel = 3;
-          this.emotion = '负向';
+          this.emotion = '分面2：香港青年';
           this.$alert('', '文本生成完成，耗时'+secnum.toString()+'秒', {
             confirmButtonText: '确定',
             callback: action => {
@@ -212,6 +214,31 @@ export default {
         }, secnum*1000); 
       
     },
+    part3(item) {
+      const loading = this.$loading({
+          lock: true,
+          text: '文本生成中',
+          spinner: 'el-icon-loading',
+          background: 'rgba(0, 0, 0, 0.7)'
+        });
+      var secnum = Math.random()*5+5
+        setTimeout(() => {
+          loading.close();
+          this.sel = 3;
+          this.emotion = '分面3：五眼联盟';
+          this.$alert('', '文本生成完成，耗时'+secnum.toString()+'秒', {
+            confirmButtonText: '确定',
+            callback: action => {
+              this.$message({
+                type: 'info',
+                message: `action: ${ action }`
+              });
+            }
+          });
+        }, secnum*1000); 
+      
+    },
+
     handleClick(tab, event) {
       console.log(tab, event);
     },
@@ -226,6 +253,7 @@ export default {
     },
     handleSelectionChange(val) {
       this.multipleSelection = val;
+      console.log(this.multipleSelection)
     }
   },
 };
@@ -290,7 +318,7 @@ export default {
   height: 200px;
   border-width: 0px;
   background-color: #409eff;
-  font-size: 30px;
+  font-size: 25px;
   color: white;
   border-radius: 50%;
   outline: none;
@@ -301,5 +329,17 @@ export default {
   background-color: #66b1ff;
 
 }
-
+.description{
+  width: 400px;
+  height: 180px;
+  white-space:pre-wrap;
+  white-space:-moz-pre-wrap;
+  white-space:-pre-wrap;
+  white-space:-o-pre-wrap;
+  word-wrap:break-word;
+  font-size: 17px;
+  text-align:center;
+  clear:both;
+  position: absolute;
+}
 </style>
