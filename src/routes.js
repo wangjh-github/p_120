@@ -3,7 +3,9 @@ import Home from './views/Home.vue'
 import MainPage from '@/views/MainPage'
 import Interventionplan from '@/views/intervention/Interventionplan'
 import keynodeselection from '@/views/keynodeselection'
+import EventsDisplay from '@/views/EventsDisplay'
 import alignment from "./views/alignment";
+
 
 /*import Homepage from './views/list/homepage.vue'
 import Table from './views/list/Table.vue'*/
@@ -56,6 +58,18 @@ let routes = [{
     leaf: true,//只有一个节点,
     children: [
       {path: '/Interventionplan', component: Interventionplan, name: '文本生成及发送'},
+
+    ]
+  },
+    {
+    path: '/',
+    name: '舆情事件引导',
+    component: Home,
+    iconCls: 'el-icon-s-custom',
+    redirect: '/EventsDisplay',
+    leaf: true,//只有一个节点,
+    children: [
+      {path: '/EventsDisplay', component: EventsDisplay, name: '舆情事件引导'},
 
     ]
   },
