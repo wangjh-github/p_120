@@ -44,9 +44,9 @@
                   height: 130px;
                   font-size: 18px;
                 ">
-                <p id="twi_cnt_node">Twitter敏感用户数: 111</p>
-                <p id="fb_cnt_node">Facebook敏感用户数: 47</p>
-                <p id="ins_cnt_node">Instagram敏感用户数: 40</p>
+                <p id="twi_cnt_node">Twitter敏感用户数: 0</p>
+                <p id="fb_cnt_node">Facebook敏感用户数: 0</p>
+                <p id="ins_cnt_node">Instagram敏感用户数: 0</p>
               </div>
 
               <div id style="text-align: center; width: 90%; height: 140px">
@@ -264,7 +264,7 @@
             document.getElementById("twi_cnt_node").innerHTML =
               "Twitter敏感用户数: " + graph.cnt_node[0].toString();
             document.getElementById("fb_cnt_node").innerHTML =
-              "Facebook敏感用户数: " + graph.cnt_node[2].toString();
+              "Facebook敏感用户数: " + (graph.cnt_node[2]+5).toString();
             document.getElementById("ins_cnt_node").innerHTML =
               "Instagram敏感用户数: " + graph.cnt_node[1].toString();
 
@@ -365,7 +365,7 @@
           document.getElementById("twi_cnt_node").innerHTML =
             "Twitter敏感用户数: " + graph.cnt_node[0].toString();
           document.getElementById("fb_cnt_node").innerHTML =
-            "Facebook敏感用户数: " + graph.cnt_node[2].toString();
+            "Facebook敏感用户数: " + (graph.cnt_node[2]+5).toString();
           document.getElementById("ins_cnt_node").innerHTML =
             "Instagram敏感用户数: " + graph.cnt_node[1].toString();
 
