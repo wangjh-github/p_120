@@ -25,7 +25,6 @@
   </div>
 </template>
 <script>
-import Keynodes_function from './components/Keynodes_function'
 
 import Keynodes_method1 from "./components/Keynodes_method1";
 import Keynodes_method2 from "./components/Keynodes_method2";
@@ -36,10 +35,6 @@ import CoronaVirus from "./components/CoronaVirus";
 
 export default {
   components: {
-    "Keynodes_function": Keynodes_function,
-
-    "Keynodes_method1":Keynodes_method1,
-    "Keynodes_method2":Keynodes_method2,
     "LuanGang":LuanGang,
     "Election":Election,
     "Kaoyan":Kaoyan,
@@ -89,5 +84,7 @@ export default {
   background: #FFFFFF;
   text-align: left;
 }
+
+
 
 </style>

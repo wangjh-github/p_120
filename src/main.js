@@ -12,6 +12,7 @@ import Mock from './mock'
 Mock.bootstrap();
 import './style/login.css'
 import echarts from 'echarts'
+require('echarts-wordcloud')
 Vue.prototype.$echarts = echarts
 import VueSweetalert2 from './plugins/vue-sweetalert2'
 Vue.use(VueSweetalert2)
@@ -21,7 +22,7 @@ Vue.use(VueSweetalert2)
 Vue.use(ElementUI)
 Vue.use(VueRouter)
 Vue.use(Vuex)
-import axios from 'axios' 
+import axios from 'axios'
 Vue.prototype.$ajax = axios;  //默认调用地址的名称
 //axios.defaults.baseURL = 'https://www.hcxlyun.cn/cloud-examine'; //设置公用请求 测试环境
 axios.defaults.baseURL = ""
