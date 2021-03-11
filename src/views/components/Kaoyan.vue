@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-row :gutter="20">
+    <el-row :gutter="24">
       <el-col :span="10">
         <el-container>
           <el-header>
@@ -19,7 +19,7 @@
           </el-main>
         </el-container>
 
-        <el-container>
+        <el-container style="margin-top: 30px">
           <el-header>
         <p style="font-size: 18px;font-weight:bold;text-align: center;">站点分布</p>
         </el-header>
@@ -38,63 +38,63 @@
       </el-col>
 
 
-      <el-col :span="10">
+      <el-col :span="12">
         <el-container>
           <el-header>
             <p style="font-size: 18px;font-weight:bold;">相关贴子</p>
           </el-header>
           <el-main style="height: 1185px">
-            <el-row :type="flex" justify="center" align="middle" style="height: 50px">
+            <el-row :type="flex" justify="center" align="middle" style="height: 100px">
             <el-col :span="3">
               <div style="height: 15px;"></div>
               <img src="../../../static/image/weibo.png" style="aligh:middle;width:50px;margin: 0 auto;">
             </el-col>
-            <el-col :span="21">
+            <el-col :span="20">
               <p style="font-size: 18px;">尼日利亚人在美国美国大选两周后特朗普关心选票选票就像他们没有钱一样</p>
             </el-col>
             </el-row>
-            <el-row style="height: 50px">
+            <el-row style="height: 100px">
             <el-col :span="3">
               <div style="height: 5px;"></div>
               <img src="../../../static/image/tieba.png" style="width:50px;margin: 0 auto;">
             </el-col>
-            <el-col :span="21">
+            <el-col :span="20">
               <p style="font-size: 18px;">新特朗普刚刚提交了一份档案——6.31亿美元现金在手——1400万美元债务——我们将得到b的全部数位</p>
             </el-col>
             </el-row>
-            <el-row style="height: 50px">
+            <el-row style="height: 100px">
             <el-col :span="3">
               <div style="height: 15px;"></div>
               <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
             </el-col>
-            <el-col :span="21">
+            <el-col :span="20">
               <p style="font-size: 18px;">twatus election 7 things we learned after Trump demands Biden be investigated now</p>
             </el-col>
             </el-row>
-            <el-row style="height: 50px">
+            <el-row style="height: 100px">
             <el-col :span="3">
               <div style="height: 15px;"></div>
               <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
             </el-col>
-            <el-col :span="21">
+            <el-col :span="20">
               <p style="font-size: 18px;">トランプは新しい反響をかき立てる一方、彼のアドバイザーは狭い世論調査で希望を見る</p>
             </el-col>
             </el-row>
-            <el-row style="height: 50px">
+            <el-row style="height: 100px">
             <el-col :span="3">
               <div style="height: 15px;"></div>
               <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
             </el-col>
-            <el-col :span="21">
+            <el-col :span="20">
               <p style="font-size: 18px;">钟斯戴律师事务所（jones day）作为特朗普竞选连任的外部律师，已经赚了数百万美元，但其l</p>
             </el-col>
             </el-row>
-            <el-row style="height: 50px">
+            <el-row style="height: 100px">
             <el-col :span="3">
               <div style="height: 15px;"></div>
               <img src="../../../static/image/tieba.png" style="width:50px;margin: 0 auto;">
             </el-col>
-            <el-col :span="21">
+            <el-col :span="20">
               <p style="font-size: 18px;">媒体给他们洗脑特朗普是在对抗世界上所有的力量它是美国爱国者</p>
             </el-col>
             </el-row>
@@ -103,7 +103,7 @@
               <div style="height: 15px;"></div>
               <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
             </el-col>
-            <el-col :span="21">
+            <el-col :span="20">
               <p style="font-size: 18px;">新闻特朗普竞选委员会预计将只报告约6300万美元，这大约是它的一半</p>
             </el-col>
             </el-row>
@@ -112,7 +112,7 @@
               <div style="height: 15px;"></div>
               <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
             </el-col>
-            <el-col :span="21">
+            <el-col :span="20">
               <p style="font-size: 18px;">tucson mayor demands Trump pay his 2016 bill before rally</p>
             </el-col>
             </el-row>
@@ -121,7 +121,7 @@
               <div style="height: 15px;"></div>
               <img src="../../../static/image/tieba.png" style="width:50px;margin: 0 auto;">
             </el-col>
-            <el-col :span="21">
+            <el-col :span="20">
               <p style="font-size: 18px;">特朗普离奇地宣称拜登将在随心所欲的福克斯访谈中带走上帝</p>
             </el-col>
             </el-row>
@@ -130,7 +130,7 @@
               <div style="height: 15px;"></div>
               <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
             </el-col>
-            <el-col :span="21">
+            <el-col :span="20">
               <p style="font-size: 18px;">大选前两周，特朗普因对屈原的不满，选择了与全国最受欢迎的新闻节目较量</p>
             </el-col>
             </el-row>
@@ -139,7 +139,7 @@
               <div style="height: 15px;"></div>
               <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
             </el-col>
-            <el-col :span="21">
+            <el-col :span="20">
               <p style="font-size: 18px;">特朗普依靠他的司法部長在兩周後的大選前調查他的競選對手</p>
             </el-col>
             </el-row>
@@ -148,7 +148,7 @@
               <div style="height: 15px;"></div>
               <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
             </el-col>
-            <el-col :span="21">
+            <el-col :span="20">
               <p style="font-size: 18px;">你認為特朗普的舞步會為他贏得即將到來的美國大選新聞嗎</p>
             </el-col>
             </el-row>
@@ -157,7 +157,7 @@
               <div style="height: 15px;"></div>
               <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
             </el-col>
-            <el-col :span="21">
+            <el-col :span="20">
               <p style="font-size: 18px;">独立党特朗普回到关键的宾夕法尼亚州竞选路线，他选择与60奇怪的斗争</p>
             </el-col>
             </el-row>
@@ -166,7 +166,7 @@
               <div style="height: 15px;"></div>
               <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
             </el-col>
-            <el-col :span="21">
+            <el-col :span="20">
               <p style="font-size: 18px;">at this point with as unhinged as Trump is i wouldnt be surprised if barr has joe Biden arrested the day</p>
             </el-col>
             </el-row>
@@ -175,7 +175,7 @@
               <div style="height: 15px;"></div>
               <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
             </el-col>
-            <el-col :span="21">
+            <el-col :span="20">
               <p style="font-size: 18px;">作为特朗普连任竞选的外部律师，钟斯日赢得了数百万美元的收入，该公司的律师已经捐赠了近90美元</p>
             </el-col>
             </el-row>
@@ -184,17 +184,17 @@
               <div style="height: 15px;"></div>
               <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
             </el-col>
-            <el-col :span="21">
+            <el-col :span="20">
               <p style="font-size: 18px;">特朗普證實，儘管計畫讓麥克風靜音，但他仍將出席最後的辯論</p>
             </el-col>
             </el-row>
-            
+
             <el-row style="height: 50px">
             <el-col :span="3">
               <div style="height: 15px;"></div>
               <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
             </el-col>
-            <el-col :span="21">
+            <el-col :span="20">
               <p style="font-size: 18px;">Trump new fec filings show Trump cash troublesTrump ended sept with</p>
             </el-col>
             </el-row>
@@ -203,7 +203,7 @@
               <div style="height: 15px;"></div>
               <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
             </el-col>
-            <el-col :span="21">
+            <el-col :span="20">
               <p style="font-size: 18px;">一天前，特朗普多次稱他的對手為罪犯，並用同一個詞稱呼自己的記者</p>
             </el-col>
             </el-row>
@@ -212,7 +212,7 @@
               <div style="height: 15px;"></div>
               <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
             </el-col>
-            <el-col :span="21">
+            <el-col :span="20">
               <p style="font-size: 18px;">特朗普阵营9月份在电视广播广告上的花费不到5600万美元，而这一数位接近148万美元</p>
             </el-col>
             </el-row>
@@ -657,25 +657,25 @@
     color: #333;
   }
 
-  body > .el-container {
-    margin-bottom: 40px;
-  }
+  /*body > .el-container {*/
+  /*  margin-bottom: 40px;*/
+  /*}*/
 
-  .el-container:nth-child(1) .el-aside,
-  .el-container:nth-child(2) {
-    margin-top: 40px;
-  }
+  /*.el-container:nth-child(1) .el-aside,*/
+  /*.el-container:nth-child(2) {*/
+  /*  margin-top: 40px;*/
+  /*}*/
 
-  .el-container:nth-child(2) .el-aside {
-    line-height: 260px;
-  }
+  /*.el-container:nth-child(2) .el-aside {*/
+  /*  line-height: 260px;*/
+  /*}*/
 
-  .el-container:nth-child(3) .el-aside {
-    line-height: 320px;
-  }
+  /*.el-container:nth-child(3) .el-aside {*/
+  /*  line-height: 320px;*/
+  /*}*/
 
-  .el-row{
-    height: 100%;
-  }
+  /*.el-row{*/
+  /*  height: 100%;*/
+  /*}*/
 
 </style>

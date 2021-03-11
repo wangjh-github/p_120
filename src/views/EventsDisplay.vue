@@ -52,15 +52,6 @@ export default {
     handleClick(tab, event) {
       console.log(tab, event);
     },
-    handleCommand(command) {
-      this.data_type = command;
-      if (command == 'a') {
-        document.getElementById("data_lable").innerHTML = "最优效率节点选择算法<i class='el-icon-arrow-down el-icon--right'></i>";
-      } else if (command == 'b') {
-        document.getElementById("data_lable").innerHTML = "基于动态隔离策略的节点选择<i class='el-icon-arrow-down el-icon--right'></i>";
-      }
-
-    }
 
   },
   mounted() {
@@ -78,7 +69,7 @@ export default {
 }
 
 #page {
-  height: 2500px;
+  height: 1400px;
   margin-top: 20px;
   padding: 20px 20px 5px 20px;
   background: #FFFFFF;

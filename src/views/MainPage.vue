@@ -7,7 +7,7 @@
           <h1>舆情事件引导</h1>
         </div>
         <div class="main">
-          <el-row :gutter="20" style="margin-left: 5%; margin-right: 5%">
+          <el-row :gutter="20" style="margin-left: 5%; margin-right: 5%; height: 40%">
             <el-col :span="6">
               <div style="text-align: center; border-radius: 4px;">
                 <img src="../../static/image/luangang.jpg" style="width:150px;margin: 0 auto;">
@@ -88,14 +88,14 @@
           </el-row>
         </div>
 
-        </el-tabs>
+
 
 
         <div style="text-align:center; font-size:30px; height: 100px">
           <h1>敏感用户全息画像构建及个性化引导</h1>
         </div>
         <div class="main">
-          <el-row :gutter="20" style="margin-left: 5%; margin-right: 5%">
+          <el-row :gutter="20" style="margin-left: 5%; margin-right: 5%; height: 40%">
             <el-col :span="8">
               <div style="text-align: center; border-radius: 4px;">
                 <img src="../../static/image/main1.png" style="width:100px;margin: 0 auto;">
@@ -189,7 +189,6 @@
         <!--            <h2 style="margin-left:40%">多模态用户认知干预系统架构</h2>-->
         <!--          </el-tab-pane>-->
 
-        </el-tabs>
       </div>
     </div>
   </div>

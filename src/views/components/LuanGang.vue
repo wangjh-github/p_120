@@ -19,7 +19,7 @@
           </el-main>
         </el-container>
 
-        <el-container>
+        <el-container style="margin-top: 30px">
           <el-header>
         <p style="font-size: 18px;font-weight:bold;text-align: center;">站点分布</p>
         </el-header>
@@ -197,7 +197,7 @@
               <p style="font-size: 18px;">@像許多其他被毆打、監禁和流放的香港年輕人一樣，他們的財務狀況也是神聖的…</p>
             </el-col>
             </el-row>
-            
+
             <el-row style="height: 50px">
             <el-col :span="3">
               <div style="height: 15px;"></div>
@@ -568,25 +568,25 @@
     color: #333;
   }
 
-  body > .el-container {
-    margin-bottom: 40px;
-  }
+  /*body > .el-container {*/
+  /*  margin-bottom: 40px;*/
+  /*}*/
 
-  .el-container:nth-child(1) .el-aside,
-  .el-container:nth-child(2) {
-    margin-top: 40px;
-  }
+  /*.el-container:nth-child(1) .el-aside,*/
+  /*.el-container:nth-child(2) {*/
+  /*  margin-top: 40px;*/
+  /*}*/
 
-  .el-container:nth-child(2) .el-aside {
-    line-height: 260px;
-  }
+  /*.el-container:nth-child(2) .el-aside {*/
+  /*  line-height: 260px;*/
+  /*}*/
 
-  .el-container:nth-child(3) .el-aside {
-    line-height: 320px;
-  }
+  /*.el-container:nth-child(3) .el-aside {*/
+  /*  line-height: 320px;*/
+  /*}*/
 
-  .el-row{
-    height: 100%;
-  }
+  /*.el-row{*/
+  /*  height: 100%;*/
+  /*}*/
 
 </style>
