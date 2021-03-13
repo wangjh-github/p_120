@@ -38,7 +38,7 @@
       </el-col>
 
 
-      <el-col :span="12">
+      <el-col :span="10 ">
         <el-container>
           <el-header>
             <p style="font-size: 18px;font-weight:bold;">相关贴子</p>
@@ -50,7 +50,7 @@
               <img src="../../../static/image/weibo.png" style="aligh:middle;width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="20">
-              <p style="font-size: 18px;">尼日利亚人在美国美国大选两周后特朗普关心选票选票就像他们没有钱一样</p>
+              <p style="font-size: 18px;">我读的是普通一本金融专业，想考北大清华或者上海交大复旦的金融专硕研究生，有没有考名校逆袭成功的学长学姐指点指点</p>
             </el-col>
             </el-row>
             <el-row style="height: 100px">
@@ -59,25 +59,7 @@
               <img src="../../../static/image/tieba.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="20">
-              <p style="font-size: 18px;">新特朗普刚刚提交了一份档案——6.31亿美元现金在手——1400万美元债务——我们将得到b的全部数位</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 100px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">twatus election 7 things we learned after Trump demands Biden be investigated now</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 100px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">トランプは新しい反響をかき立てる一方、彼のアドバイザーは狭い世論調査で希望を見る</p>
+              <p style="font-size: 18px;">我是一名22界考研人，我目前就读于一所独立院校，我学的专业是通信工程，有没有师哥师姐给我能不能给我推荐一些学校</p>
             </el-col>
             </el-row>
             <el-row style="height: 100px">
@@ -86,7 +68,25 @@
               <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="20">
-              <p style="font-size: 18px;">钟斯戴律师事务所（jones day）作为特朗普竞选连任的外部律师，已经赚了数百万美元，但其l</p>
+              <p style="font-size: 18px;">复试口语主要考查的是Fluency and coherence，Pronunciation，Lexical resources，和Grammatical range这四个方面。</p>
+            </el-col>
+            </el-row>
+            <el-row style="height: 100px">
+            <el-col :span="3">
+              <div style="height: 15px;"></div>
+              <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
+            </el-col>
+            <el-col :span="20">
+              <p style="font-size: 18px;">本来都想好了河北工业大学，可是每个同学都说211太难考，说让我换一个学校</p>
+            </el-col>
+            </el-row>
+            <el-row style="height: 100px">
+            <el-col :span="3">
+              <div style="height: 15px;"></div>
+              <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
+            </el-col>
+            <el-col :span="20">
+              <p style="font-size: 18px;">22年考研，目标是北理或北邮计算机。大学数学学的还可以，学的时候都在85分左右，</p>
             </el-col>
             </el-row>
             <el-row style="height: 100px">
@@ -95,7 +95,7 @@
               <img src="../../../static/image/tieba.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="20">
-              <p style="font-size: 18px;">媒体给他们洗脑特朗普是在对抗世界上所有的力量它是美国爱国者</p>
+              <p style="font-size: 18px;">背单词真的太太太难了！背完了忘，忘了又背！就没有什么背单词的好办法嘛？</p>
             </el-col>
             </el-row>
             <el-row style="height: 50px">
@@ -104,16 +104,16 @@
               <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="20">
-              <p style="font-size: 18px;">新闻特朗普竞选委员会预计将只报告约6300万美元，这大约是它的一半</p>
+              <p style="font-size: 18px;">最近任燕翔手撕何凯文，开一个考研大瓜交流贴，希望大家多多参与哦！</p>
             </el-col>
             </el-row>
             <el-row style="height: 50px">
             <el-col :span="3">
               <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
+              <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="20">
-              <p style="font-size: 18px;">tucson mayor demands Trump pay his 2016 bill before rally</p>
+              <p style="font-size: 18px;">求助一下大家，考控制工程研究生，是侧重学校好点还是侧重专业好点？</p>
             </el-col>
             </el-row>
             <el-row style="height: 50px">
@@ -122,7 +122,7 @@
               <img src="../../../static/image/tieba.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="20">
-              <p style="font-size: 18px;">特朗普离奇地宣称拜登将在随心所欲的福克斯访谈中带走上帝</p>
+              <p style="font-size: 18px;">大家估分太可怕了吧，我数学估分只有90，看到大家估分都是130几分，我还有救吗？</p>
             </el-col>
             </el-row>
             <el-row style="height: 50px">
@@ -131,25 +131,7 @@
               <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="20">
-              <p style="font-size: 18px;">大选前两周，特朗普因对屈原的不满，选择了与全国最受欢迎的新闻节目较量</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">特朗普依靠他的司法部長在兩周後的大選前調查他的競選對手</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">你認為特朗普的舞步會為他贏得即將到來的美國大選新聞嗎</p>
+              <p style="font-size: 18px;">火课网校系统为教育机构独立部署自主品牌在线教育平台，助力机构轻松转型线上教育 </p>
             </el-col>
             </el-row>
             <el-row style="height: 50px">
@@ -158,16 +140,7 @@
               <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="20">
-              <p style="font-size: 18px;">独立党特朗普回到关键的宾夕法尼亚州竞选路线，他选择与60奇怪的斗争</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">at this point with as unhinged as Trump is i wouldnt be surprised if barr has joe Biden arrested the day</p>
+              <p style="font-size: 18px;">末流公办本科光电专业。图像处理方向算不算跨考啊？难不难？光学类竞争少吧。</p>
             </el-col>
             </el-row>
             <el-row style="height: 50px">
@@ -176,35 +149,62 @@
               <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="20">
-              <p style="font-size: 18px;">作为特朗普连任竞选的外部律师，钟斯日赢得了数百万美元的收入，该公司的律师已经捐赠了近90美元</p>
+              <p style="font-size: 18px;">想问一下有没有考过历史学硕的呀，我想考南京大学中国史方向的研，现在大二，应该怎么准备呀？</p>
             </el-col>
             </el-row>
             <el-row style="height: 50px">
             <el-col :span="3">
               <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
+              <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="20">
-              <p style="font-size: 18px;">特朗普證實，儘管計畫讓麥克風靜音，但他仍將出席最後的辯論</p>
+              <p style="font-size: 18px;">哪个更好些啊，高数啥的不是永乐老师讲的。第一个398第二个898如果可以的话买那个啊？</p>
+            </el-col>
+            </el-row>
+            <el-row style="height: 50px">
+            <el-col :span="3">
+              <div style="height: 15px;"></div>
+              <img src="../../../static/image/tieba.png" style="width:50px;margin: 0 auto;">
+            </el-col>
+            <el-col :span="20">
+              <p style="font-size: 18px;">本人某985学校研究生在读，本科全日制双非三本学历。 我是大龄研究生，写写自己的艰辛的几年考研之路把！</p>
+            </el-col>
+            </el-row>
+            <el-row style="height: 50px">
+            <el-col :span="3">
+              <div style="height: 15px;"></div>
+              <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
+            </el-col>
+            <el-col :span="20">
+              <p style="font-size: 18px;">我本科末流985金融，工作两年了，想考2022年研究生，现在第一步，选学校，希望有经验的人能提供一下思路。 </p>
+            </el-col>
+            </el-row>
+            <el-row style="height: 50px">
+            <el-col :span="3">
+              <div style="height: 15px;"></div>
+              <img src="../../../static/image/tieba.png" style="width:50px;margin: 0 auto;">
+            </el-col>
+            <el-col :span="20">
+              <p style="font-size: 18px;">相信不少人都被所谓考研名师带崩过，现在盘点考研各学科最大cjb名师，希望各位多多发言给学弟学妹避雷</p>
             </el-col>
             </el-row>
 
             <el-row style="height: 50px">
             <el-col :span="3">
               <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
+              <img src="../../../static/image/tieba.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="20">
-              <p style="font-size: 18px;">Trump new fec filings show Trump cash troublesTrump ended sept with</p>
+              <p style="font-size: 18px;">考研英语是花卷，也就是同样的题但是选项位置不同，但是只根据答题卡是怎么判定你做的是哪套卷子呢？</p>
             </el-col>
             </el-row>
             <el-row style="height: 50px">
             <el-col :span="3">
               <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
+              <img src="../../../static/image/tieba.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="20">
-              <p style="font-size: 18px;">一天前，特朗普多次稱他的對手為罪犯，並用同一個詞稱呼自己的記者</p>
+              <p style="font-size: 18px;">[出售]药学349全套21考研资料书（适合川大考研）有机 分化 生化（只用过一点点，很新）</p>
             </el-col>
             </el-row>
             <el-row style="height: 50px">
@@ -213,7 +213,7 @@
               <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="20">
-              <p style="font-size: 18px;">特朗普阵营9月份在电视广播广告上的花费不到5600万美元，而这一数位接近148万美元</p>
+              <p style="font-size: 18px;">考法学硕士的意愿越来越强烈，特别是看了最近某个综艺以后虽然我也知道现实是残酷的，而况法硕非法。</p>
             </el-col>
             </el-row>
           </el-main>
@@ -328,79 +328,79 @@
         // ],
         echarts05Data:  [
         {
-          name: "香港",
+          name: "考研",
           value: 15000
         },
         {
-          name: "自由",
+          name: "2021",
           value: 10081
         },
         {
-          name: "一个国家",
+          name: "试题",
           value: 9386
         },
         {
-          name: "内地",
+          name: "政治",
           value: 7500
         },
         {
-          name: "支持",
+          name: "英语",
           value: 7500
         },
         {
-          name: "社会主义制度",
+          name: "数学",
           value: 6500
         },
         {
-          name: "国防白皮书",
+          name: "专业",
           value: 6500
         },
         {
-          name: "创新",
+          name: "面试",
           value: 6000
         },
         {
-          name: "民主革命",
+          name: "汤家凤",
           value: 4500
         },
         {
-          name: "文化强国",
+          name: "张宇",
           value: 3800
         },
         {
-          name: "国家主权",
+          name: "机构",
           value: 3000
         },
         {
-          name: "武装颠覆",
+          name: "复习",
           value: 2500
         },
         {
-          name: "领土完整",
+          name: "备考",
           value: 2300
         },
         {
-          name: "安全",
+          name: "初试",
           value: 2000
         },
         {
-          name: "从严治党",
+          name: "教师",
           value: 1900
         },
         {
-          name: "现代化经济体系",
+          name: "学校",
           value: 1800
         },
         {
-          name: "国防动员",
+          name: "目标",
           value: 1700
         },
         {
-          name: "信息化战争",
+          name: "求助",
           value: 1600
         },
         {
-          name: "局部战争",
+          name: "上岸",
           value: 1500
         },
         {
@@ -408,19 +408,19 @@
           value: 1200
         },
         {
-          name: "职业教育",
+          name: "目标院校",
           value: 1100
         },
         {
-          name: "兵法",
+          name: "计算机",
           value: 900
         },
         {
-          name: "一国两制",
+          name: "408",
           value: 800
         },
         {
-          name: "特点社会主义思想",
+          name: "录取分数",
           value: 700
         },
       ],
@@ -453,7 +453,7 @@
               // {value: 335, name: ''},
               // {value: 310, name: '邮件营销直接访问'},
               {value: 100, name: '微博'},
-              {value: 150, name: 'twitter'},
+              {value: 0, name: 'twitter'},
               {value: 60, name: '贴吧'}
             ],
             emphasis: {

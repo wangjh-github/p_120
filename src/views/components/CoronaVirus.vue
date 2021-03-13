@@ -47,50 +47,13 @@
 
 
 
-
-            <el-row :type="flex" justify="center" align="middle" style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/weibo.png" style="aligh:middle;width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="21">
-              <p style="font-size: 18px;">冒著被捕的危險，我們封鎖了中國駐華府大使館的入口，呼籲香港的人權與自由！#洪克</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 5px;"></div>
-              <img src="../../../static/image/tieba.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="21">
-              <p style="font-size: 18px;">感謝湯姆·蘭德爾為支持香港而作的精彩作品</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="21">
-              <p style="font-size: 18px;">Blocking the entrance to the Chinese Embassy in Wash, DC as we call for human rights and freedom in HK! #HongKong ⁦@Stand_w</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="21">
-              <p style="font-size: 18px;">民主主義のためのHKの戦いを支持してくれてありがとう🙏🏼我々の若い活動家は、単に投獄されます.</p>
-            </el-col>
-            </el-row>
             <el-row style="height: 50px">
             <el-col :span="3">
               <div style="height: 15px;"></div>
               <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="21">
-              <p style="font-size: 18px;">@感谢您与香港站在一起。这是香港另一个悲伤的时刻。任何支持自由、人权、政治的人…</p>
+              <p style="font-size: 18px;">感谢那些疫情期间为我们奉献自己的白衣天使们！没有他们我们不可能这么早步入正轨</p>
             </el-col>
             </el-row>
             <el-row style="height: 50px">
@@ -99,7 +62,7 @@
               <img src="../../../static/image/tieba.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="21">
-              <p style="font-size: 18px;">对于自由斗士——曼德拉、国王、刘晓波——来说，监狱是通往民主之路的必然和必要的一部分</p>
+              <p style="font-size: 18px;">#面对复工的心理状态#哈哈哈哈哈哈哈，真要去上班，还是不愿意去的【悲】过于真实</p>
             </el-col>
             </el-row>
             <el-row style="height: 50px">
@@ -108,7 +71,7 @@
               <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="21">
-              <p style="font-size: 18px;">一名美国人今天加入人权游行，说香港人不仅为香港或自己而战，也为香港人争取人权</p>
+              <p style="font-size: 18px;">咳嗽就是被感染了吗？肺炎的症状之一是咳嗽，但并非所有的咳嗽都是肺炎</p>
             </el-col>
             </el-row>
             <!-- <el-row style="height: 50px">
@@ -126,7 +89,8 @@
               <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="21">
-              <p style="font-size: 18px;">@hk_watch why is hong kong giving up the fight for freedom? you are going to be the new tibet at this rate</p>
+              <p style="font-size: 18px;">After returning to Beijing, they still need to be quarantined for 14 days, and now they can't go back. They are anxious
+Looking forward to feedback of 2 / 9 clinical trial results</p>
             </el-col>
             </el-row>
             <el-row style="height: 50px">
@@ -135,7 +99,34 @@
               <img src="../../../static/image/tieba.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="21">
-              <p style="font-size: 18px;">每一个旁观者都站在那里无助地看着溺水的女人，直到一个外国人来救她。它代表我…</p>
+              <p style="font-size: 18px;">中国加油！武汉必胜！中国加油！武汉必胜！中国加油！武汉必胜！中国加油！武汉必胜！</p>
+            </el-col>
+            </el-row>
+            <el-row style="height: 50px">
+            <el-col :span="3">
+              <div style="height: 15px;"></div>
+              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
+            </el-col>
+            <el-col :span="21">
+              <p style="font-size: 18px;">#Focus on the prevention and control of new pneumonia epidemic in Yunnan microblog video forwarding on cloud TV: sure!</p>
+            </el-col>
+            </el-row>
+            <el-row style="height: 50px">
+            <el-col :span="3">
+              <div style="height: 15px;"></div>
+              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
+            </el-col>
+            <el-col :span="21">
+              <p style="font-size: 18px;">真是我來幫你抵抗疫情，你卻讓我買房？[費解] [費解] [費解]轉發理由：轉發微博</p>
+            </el-col>
+            </el-row>
+            <el-row style="height: 50px">
+            <el-col :span="3">
+              <div style="height: 15px;"></div>
+              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
+            </el-col>
+            <el-col :span="21">
+              <p style="font-size: 18px;">#李文亮仍在搶救#挺住！武漢顯示地圖 是的，他看不到了[淚] [淚] [淚] [淚]唉！轉發理由：突然一下就哭了</p>
             </el-col>
             </el-row>
             <el-row style="height: 50px">
@@ -144,7 +135,7 @@
               <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="21">
-              <p style="font-size: 18px;">亲爱的，香港人，台湾人和韩国人，你觉得怎么样？如果拜登赢了，中国赢了，美国、香港、台湾、韩国将输。阿拉伯海湾</p>
+              <p style="font-size: 18px;">#情人节#白衣天使辛苦了！抗议一线的英雄们辛苦了！惠州显示地图</p>
             </el-col>
             </el-row>
             <el-row style="height: 50px">
@@ -153,7 +144,25 @@
               <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="21">
-              <p style="font-size: 18px;">感謝你們為香港的自由和民主所作的努力。希望他們能安全。上帝保佑他們…</p>
+              <p style="font-size: 18px;">今日の高速道路と鄭州の市街はまるで静かに都市のように眠ってしまいました。</p>
+            </el-col>
+            </el-row>
+            <el-row :type="flex" justify="center" align="middle" style="height: 50px">
+            <el-col :span="3">
+              <div style="height: 15px;"></div>
+              <img src="../../../static/image/weibo.png" style="aligh:middle;width:50px;margin: 0 auto;">
+            </el-col>
+            <el-col :span="21">
+              <p style="font-size: 18px;">在家过个生日，祝自己生日快乐！希望疫情早早过去！一会我去研究个抖音，发给你们看【哈哈】</p>
+            </el-col>
+            </el-row>
+            <el-row style="height: 50px">
+            <el-col :span="3">
+              <div style="height: 5px;"></div>
+              <img src="../../../static/image/tieba.png" style="width:50px;margin: 0 auto;">
+            </el-col>
+            <el-col :span="21">
+              <p style="font-size: 18px;">作为爸爸妈妈的女儿，我希望他们也要保护好自己，照顾好自己，我们一起平安回家</p>
             </el-col>
             </el-row>
             <el-row style="height: 50px">
@@ -162,16 +171,26 @@
               <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="21">
-              <p style="font-size: 18px;">@frances_sit Thank you their effort for the freedom and democracy in #HongKong. Hope they can be safe. God bless th…</p>
+              <p style="font-size: 18px;">First of all, if you have a fever and feel uncomfortable, it doesn't mean you are infected</p>
             </el-col>
             </el-row>
+            <el-row style="height: 50px">
+            <el-col :span="3">
+              <div style="height: 15px;"></div>
+              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
+            </el-col>
+            <el-col :span="21">
+              <p style="font-size: 18px;">頑張って！http://t.cn/A 6 hPRji転送理由：皆さんが自分の平穏を守って帰ってほしいです。</p>
+            </el-col>
+            </el-row>
+            
             <el-row style="height: 50px">
             <el-col :span="3">
               <div style="height: 15px;"></div>
               <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="21">
-              <p style="font-size: 18px;">哥伦比亚广播公司今早的乔舒旺格夫、周廷格尼斯和伊凡兰都非常勇敢地为香港的自由而战，但是他们…</p>
+              <p style="font-size: 18px;">守望相助，抗擊疫情！#武漢加油#！轉發理由：14 / / @ X玖少年團肖戰DAYTOY：守望相助，多一份力量！</p>
             </el-col>
             </el-row>
             <el-row style="height: 50px">
@@ -180,25 +199,7 @@
               <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="21">
-              <p style="font-size: 18px;">@BarrySheerman CCP will never allow democracy.#HongKong is the best example of why we should never trust China.Beijing will n…</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="21">
-              <p style="font-size: 18px;">我在2015年去了香港，我发现自己很喜欢它，因为它有自由感。到底谁有一个钻井平台…</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="21">
-              <p style="font-size: 18px;">@像許多其他被毆打、監禁和流放的香港年輕人一樣，他們的財務狀況也是神聖的…</p>
+              <p style="font-size: 18px;">萼遅れて再工した給料は新しい政策を出します。萼中央視詩の朗読は感動的すぎます。</p>
             </el-col>
             </el-row>
 
@@ -217,7 +218,7 @@
               <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="21">
-              <p style="font-size: 18px;">@business Every core value in HK is eroded by the regime and the new National Security law. Reporters are losing freedom</p>
+              <p style="font-size: 18px;">今天核酸檢測結果陽性，塵埃落定，終於確診了[二哈]武漢·武漢市中心醫院轉發理由：一路走好🙏🏻🙏🏻🙏🏻</p>
             </el-col>
             </el-row>
             <el-row style="height: 50px">
@@ -226,7 +227,7 @@
               <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="21">
-              <p style="font-size: 18px;">看到香港这样我真的很难过！什么时候香港才能重新团结起来，重现辉煌</p>
+              <p style="font-size: 18px;">這兩天自己身體不舒服，爸媽又去醫院了，因為疫情，不能天天回家，家裡只剩我和弟弟</p>
             </el-col>
             </el-row>
           </el-main>
@@ -341,99 +342,99 @@
         // ],
         echarts05Data:  [
         {
-          name: "香港",
+          name: "疫情",
           value: 15000
         },
         {
-          name: "自由",
+          name: "加油",
           value: 10081
         },
         {
-          name: "一个国家",
+          name: "武汉",
           value: 9386
         },
         {
-          name: "内地",
+          name: "转发",
           value: 7500
         },
         {
-          name: "支持",
+          name: "希望",
           value: 7500
         },
         {
-          name: "社会主义制度",
+          name: "微博",
           value: 6500
         },
         {
-          name: "国防白皮书",
+          name: "过去",
           value: 6500
         },
         {
-          name: "创新",
+          name: "一起",
           value: 6000
         },
         {
-          name: "民主革命",
+          name: "作揖",
           value: 4500
         },
         {
-          name: "文化强国",
+          name: "中国",
           value: 3800
         },
         {
-          name: "国家主权",
+          name: "今天",
           value: 3000
         },
         {
-          name: "武装颠覆",
+          name: "肺炎",
           value: 2500
         },
         {
-          name: "领土完整",
+          name: "抗击",
           value: 2300
         },
         {
-          name: "安全",
+          name: "自己",
           value: 2000
         },
         {
-          name: "从严治党",
+          name: "悲伤",
           value: 1900
         },
         {
-          name: "现代化经济体系",
+          name: "复工",
           value: 1800
         },
         {
-          name: "国防动员",
+          name: "允悲",
           value: 1700
         },
         {
-          name: "信息化战争",
+          name: "结束",
           value: 1600
         },
         {
-          name: "局部战争",
+          name: "新型",
           value: 1500
         },
         {
-          name: "教育",
+          name: "平安",
           value: 1200
         },
         {
-          name: "职业教育",
+          name: "保护",
           value: 1100
         },
         {
-          name: "兵法",
+          name: "期待",
           value: 900
         },
         {
-          name: "一国两制",
+          name: "口罩",
           value: 800
         },
         {
-          name: "特点社会主义思想",
+          name: "确诊",
           value: 700
         },
       ],
