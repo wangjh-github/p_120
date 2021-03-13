@@ -44,6 +44,61 @@
             <p style="font-size: 18px;font-weight:bold;">相关贴子</p>
           </el-header>
           <el-main style="height: 1185px">
+            <el-row style="height: 50px">
+            <el-col :span="3">
+              <div style="height: 15px;"></div>
+              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
+            </el-col>
+            <el-col :span="20">
+              <p style="font-size: 18px;">at this point with as unhinged as Trump is i wouldnt be surprised if barr has joe Biden arrested the day</p>
+            </el-col>
+            </el-row>
+            <el-row style="height: 50px">
+            <el-col :span="3">
+              <div style="height: 15px;"></div>
+              <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
+            </el-col>
+            <el-col :span="20">
+              <p style="font-size: 18px;">作为特朗普连任竞选的外部律师，钟斯日赢得了数百万美元的收入，该公司的律师已经捐赠了近90美元</p>
+            </el-col>
+            </el-row>
+            <el-row style="height: 50px">
+            <el-col :span="3">
+              <div style="height: 15px;"></div>
+              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
+            </el-col>
+            <el-col :span="20">
+              <p style="font-size: 18px;">如果特朗普獲勝，他將在中國為世界其他地區付出巨大的努力，美國大選更關乎中國而非美國本身</p>
+            </el-col>
+            </el-row>
+
+            <el-row style="height: 50px">
+            <el-col :span="3">
+              <div style="height: 15px;"></div>
+              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
+            </el-col>
+            <el-col :span="20">
+              <p style="font-size: 18px;">Trump new fec filings show Trump cash troublesTrump ended sept with</p>
+            </el-col>
+            </el-row>
+            <el-row style="height: 50px">
+            <el-col :span="3">
+              <div style="height: 15px;"></div>
+              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
+            </el-col>
+            <el-col :span="20">
+              <p style="font-size: 18px;">一天前，特朗普多次稱他的對手為罪犯，並用同一個詞稱呼自己的記者</p>
+            </el-col>
+            </el-row>
+            <el-row style="height: 50px">
+            <el-col :span="3">
+              <div style="height: 15px;"></div>
+              <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
+            </el-col>
+            <el-col :span="20">
+              <p style="font-size: 18px;">特朗普阵营9月份在电视广播广告上的花费不到5600万美元，而这一数位接近148万美元</p>
+            </el-col>
+            </el-row>
             <el-row :type="flex" justify="center" align="middle" style="height: 50px">
             <el-col :span="3">
               <div style="height: 15px;"></div>
@@ -114,7 +169,7 @@
               <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="20">
-              <p style="font-size: 18px;">tucson mayor demands Trump pay his 2016 bill before rally</p>
+              <p style="font-size: 18px;">tucson mayor demands Trump pay his 2016 bill before rally which is really funny</p>
             </el-col>
             </el-row>
 
@@ -124,7 +179,7 @@
               <img src="../../../static/image/tieba.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="20">
-              <p style="font-size: 18px;">特朗普宣称拜登将在随心所欲的福克斯访谈中带走上帝</p>
+              <p style="font-size: 18px;">据报道美国总统特朗普宣称拜登将在随心所欲的福克斯访谈中带走上帝</p>
             </el-col>
             </el-row>
 
@@ -144,7 +199,7 @@
               <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="20">
-              <p style="font-size: 18px;">特朗普依靠他的司法部長在兩周後的大選前調查他的競選對手</p>
+              <p style="font-size: 18px;">《旁觀者》介紹特朗普是否值得連任加入萊昂內爾·施賴弗·奈傑爾·法拉奇·莎拉·伊里亞德（lionel shriver nigel farage sarah elliott）</p>
             </el-col>
             </el-row>
             <el-row style="height: 50px">
@@ -153,7 +208,7 @@
               <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
             </el-col>
             <el-col :span="20">
-              <p style="font-size: 18px;">你認為特朗普的舞步會為他贏得即將到來的美國大選新聞嗎</p>
+              <p style="font-size: 18px;">作為特朗普連任競選的外部律師，鐘斯日贏得了數百萬美元的收入，該公司的律師已經捐贈了近90美元</p>
             </el-col>
             </el-row>
             <el-row style="height: 50px">
@@ -165,61 +220,7 @@
               <p style="font-size: 18px;">独立党特朗普回到关键的宾夕法尼亚州竞选路线，他选择与60奇怪的斗争</p>
             </el-col>
             </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">at this point with as unhinged as Trump is i wouldnt be surprised if barr has joe Biden arrested the day</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">作为特朗普连任竞选的外部律师，钟斯日赢得了数百万美元的收入，该公司的律师已经捐赠了近90美元</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">特朗普證實，儘管計畫讓麥克風靜音，但他仍將出席最後的辯論</p>
-            </el-col>
-            </el-row>
-
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">Trump new fec filings show Trump cash troublesTrump ended sept with</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">一天前，特朗普多次稱他的對手為罪犯，並用同一個詞稱呼自己的記者</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">特朗普阵营9月份在电视广播广告上的花费不到5600万美元，而这一数位接近148万美元</p>
-            </el-col>
-            </el-row>
+            
           </el-main>
         </el-container>
       </el-col>
@@ -332,99 +333,99 @@
         // ],
         echarts05Data:  [
         {
-          "name": "香港",
+          "name": "特朗普",
           "value": 15000
         },
         {
-          name: "自由",
+          name: "拜登",
           value: 10081
         },
         {
-          name: "一个国家",
+          name: "美国",
           value: 9386
         },
         {
-          name: "内地",
+          name: "大选",
           value: 7500
         },
         {
-          name: "支持",
+          name: "选举",
           value: 7500
         },
         {
-          name: "社会主义制度",
+          name: "总统",
           value: 6500
         },
         {
-          name: "国防白皮书",
+          name: "竞选",
           value: 6500
         },
         {
-          name: "创新",
+          name: "律师",
           value: 6000
         },
         {
-          name: "民主革命",
+          name: "一个",
           value: 4500
         },
         {
-          name: "文化强国",
+          name: "我们",
           value: 3800
         },
         {
-          name: "国家主权",
+          name: "2020",
           value: 3000
         },
         {
-          name: "武装颠覆",
+          name: "两周",
           value: 2500
         },
         {
-          name: "领土完整",
+          name: "他们",
           value: 2300
         },
         {
-          name: "安全",
+          name: "赢得",
           value: 2000
         },
         {
-          name: "从严治党",
+          name: "琼斯",
           value: 1900
         },
         {
-          name: "现代化经济体系",
+          name: "最后",
           value: 1800
         },
         {
-          name: "国防动员",
+          name: "如果",
           value: 1700
         },
         {
-          name: "信息化战争",
+          name: "捐款",
           value: 1600
         },
         {
-          name: "局部战争",
+          name: "支持",
           value: 1500
         },
         {
-          name: "教育",
+          name: "巴尔",
           value: 1200
         },
         {
-          name: "职业教育",
+          name: "显示",
           value: 1100
         },
         {
-          name: "兵法",
+          name: "拒绝",
           value: 900
         },
         {
-          name: "一国两制",
+          name: "团队",
           value: 800
         },
         {
-          name: "特点社会主义思想",
+          name: "对手",
           value: 700
         },
       ],
