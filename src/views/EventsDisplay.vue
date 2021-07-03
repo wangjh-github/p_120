@@ -12,7 +12,7 @@
         <el-tab-pane label="美国大选" name="second">
           <Election v-if="'second' === activeName"></Election>
         </el-tab-pane>
-        <el-tab-pane label="考研" name="third">
+        <el-tab-pane label="高考" name="third">
           <Kaoyan v-if="'third' === activeName"></Kaoyan>
 <!--          <Keynodes_function v-if="'first' === activeName"></Keynodes_function>-->
         </el-tab-pane>
@@ -32,13 +32,14 @@ import LuanGang from "./components/LuanGang";
 import Election from "./components/Election";
 import Kaoyan from "./components/Kaoyan";
 import CoronaVirus from "./components/CoronaVirus";
-
+// import luangang1 from "./components/luangang1";
 export default {
   components: {
     "LuanGang":LuanGang,
     "Election":Election,
     "Kaoyan":Kaoyan,
-    "CoronaVirus":CoronaVirus
+    "CoronaVirus":CoronaVirus,
+      // "luangang1":luangang1
 
   },
   name: 'Echarts',

@@ -185,7 +185,8 @@ export default {
   methods:{
     myEcharts1() {
 
-      this.myChart1 = this.$echarts.init(document.getElementById('chart1'));
+        let echarts = require("echarts");
+      this.myChart1 = echarts.init(document.getElementById('chart1'));
       this.myChart1.showLoading();
 
       this.myChart1.hideLoading();
@@ -227,7 +228,8 @@ export default {
     },
 
     myEcharts2() {
-      this.myChart2 = this.$echarts.init(document.getElementById('chart2'));
+        let echarts = require("echarts");
+      this.myChart2 = echarts.init(document.getElementById('chart2'));
       this.option2 = {
 
         tooltip: {
@@ -302,7 +304,8 @@ export default {
     },
 
     myEcharts3() {
-      this.myChart3 = this.$echarts.init(document.getElementById('chart3'));
+        let echarts = require("echarts");
+      this.myChart3 = echarts.init(document.getElementById('chart3'));
       var xdata = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50];
       var ydata1 = [5.1,26.4,74.7,95.4,105.4,124.5,159.7,181.9,201.6,216.1,228.3,242.7,259.8,276.7,293.5,317.3,334.6,348.9,357.4,366.2,375.6,387.9,397.9,403.2,409.3,410.3,418.4,415.7,409.9,408,412.9,409.8,411.4,415.9,412.7,408.7,407.2,406.7,407,407.7,404,397.4,392.7,382.7,374.5,370.1,369.3,362.7,361.2,358.6];
       var ydata2 = [8.8,31.2,80.3,108.3,127.8,150.2,193.1,227.4,260.9,291.3,330.1,357.1,392.3,431,462.1,499.8,531.7,558,581.6,602.4,639,651,668.9,685.7,689.7,694,700.2,700.2,703.5,704.8,721.4,701.1,695,688.1,677.8,663.5,648.7,639.7,628,620.4,620.4,583,564.8,545.9,533.2,520.5,512.2,495.3,484.2,472.6];
@@ -380,7 +383,8 @@ export default {
     },
 
     myEcharts4() {
-      this.myChart4 = this.$echarts.init(document.getElementById('chart4'));
+        let echarts = require("echarts");
+      this.myChart4 = echarts.init(document.getElementById('chart4'));
       var xdata = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50];
       var ydata1 = [6.9,11,17.4,30.2,48.1,73.9,99.9,134.4,172.7,215,260.2,310.7,364.6,410.2,452.2,492.9,530.2,562.5,586.4,608.5,628.2,645,656.6,663.6,673.7,682.4,687,690.1,685.7,688.4,686.1,680.7,672.2,665.4,652.4,650.1,643.6,637.3,629.9,623,620.2,610.3,600.9,592.1,582.9,571,567.4,563.9,558.1,555];
       var ydata2 = [9.4,12.4,22.7,37.2,59.2,88.2,120.5,160.7,202.7,249.6,310.5,374.4,441.2,510.6,568.4,629.2,689.5,746.2,796.9,845.3,900.2,943.7,978.9,1016.3,1040.4,1067.6,1088.5,1100.8,1103.7,1111.5,1129.5,1127.2,1121.7,1113.9,1101.8,1096.1,1084.7,1072.5,1060.3,1047.8,1045.1,1015.1,996.6,976.7,951.8,927.4,908,888.7,872.4,858.6];
@@ -458,7 +462,8 @@ export default {
     },
 
     myEcharts5() {
-      this.myChart5 = this.$echarts.init(document.getElementById('chart5'));
+        let echarts = require("echarts");
+      this.myChart5 = echarts.init(document.getElementById('chart5'));
       var xdata = [1,5,10,15,20,25,30];
       var ydata1 = [6.07,25.001,43.416,55.938,68.395,80.115,90.9];
       var ydata2 = [3.2325,19.974,38.827,53.092,67.463,80.574,94.101];
@@ -552,7 +557,8 @@ export default {
     },
 
     myEcharts6() {
-      this.myChart6 = this.$echarts.init(document.getElementById('chart6'));
+        let echarts = require("echarts");
+      this.myChart6 = echarts.init(document.getElementById('chart6'));
       var xdata = [1,5,10,15,20,25,30];
       var ydata1 = [5.1925,25.956,44.578,61.278,74.984,86.363,99.608];
       var ydata2 = [5.1925,25.577,45.138,63.092,80.855,95.475,109.67];
@@ -646,7 +652,8 @@ export default {
     },
 
     myEcharts7() {
-      this.myChart7 = this.$echarts.init(document.getElementById('chart7'));
+        let echarts = require("echarts");
+      this.myChart7 = echarts.init(document.getElementById('chart7'));
       var xdata = [1,5,10,15,20,25,30];
       var ydata1 = [72.502,194.65,232.56,283.24,288.13,302.35,306.96];
       var ydata2 = [72.502,116.37,187.41,232.47,254.93,281.89,299.01];

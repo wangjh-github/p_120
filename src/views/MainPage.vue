@@ -3,95 +3,7 @@
     <div>
 
       <div id="page">
-        <div style="text-align:center; font-size:30px; height: 100px">
-          <h1>舆情事件引导</h1>
-        </div>
-        <div class="main">
-          <el-row :gutter="20" style="margin-left: 5%; margin-right: 5%; height: 40%">
-            <el-col :span="6">
-              <div style="text-align: center; border-radius: 4px;">
-                <img src="../../static/image/luangang.jpg" style="width:150px;margin: 0 auto;">
-              </div>
-            </el-col>
-
-            <el-col :span="6">
-              <div style="text-align: center; border-radius: 4px;">
-                <img src="../../static/image/election.jpg" style="width:150px;margin: 0 auto;">
-              </div>
-
-            </el-col>
-
-            <el-col :span="6">
-              <div style="text-align: center; border-radius: 4px;">
-                <img src="../../static/image/kaoyan.jpg" style="width:150px;margin: 0 auto;">
-              </div>
-
-            </el-col>
-
-            <el-col :span="6">
-              <div style="text-align: center; border-radius: 4px;">
-                <img src="../../static/image/virus.jpg" style="width:150px;margin: 0 auto;">
-              </div>
-
-            </el-col>
-          </el-row>
-          <el-row :gutter="20" style="margin-left: 5%; margin-right: 5%">
-            <el-col :span="6">
-              <router-link to="/EventsDisplay">
-                <div style="text-align: center; padding: 0 50px">
-                  <h3 style="font-size:20px;">
-                    乱港事件
-                  </h3>
-                  <p>
-                    自2019年6月以来，香港反对派和一些激进势力借和平游行集会之名，进行各种激进暴力活动
-                  </p>
-                </div>
-              </router-link>
-            </el-col>
-
-            <el-col :span="6">
-              <router-link to="/EventsDisplay">
-                <div style="text-align: center; padding: 0 50px">
-                  <h3 style="font-size:20px;">
-                    美国大选
-                  </h3>
-                  <p>
-                    当地时间2020年11月3日，美国迎来总统大选日。经过激烈角逐，拜登击败特朗普赢得大选
-                  </p></div>
-              </router-link>
-            </el-col>
-
-            <el-col :span="6">
-              <router-link to="/EventsDisplay">
-                <div style="text-align: center; padding: 0 50px">
-                  <h3 style="font-size:20px;">
-                    考研
-                  </h3>
-                  <p>
-                    2020年12月26日至27日，全国总计377万考生参加了研究生入学考试
-                  </p></div>
-              </router-link>
-            </el-col>
-
-            <el-col :span="6">
-              <router-link to="/EventsDisplay">
-                <div style="text-align: center; padding: 0 50px">
-                  <h3 style="font-size:20px;">
-                    新冠疫情
-                  </h3>
-                  <p>
-                    2020年新冠疫情的暴发给全球人民生命安全带来严重威胁
-                  </p></div>
-              </router-link>
-            </el-col>
-
-          </el-row>
-        </div>
-
-
-
-
-        <div style="text-align:center; font-size:30px; height: 100px">
+        <div style="text-align:center; font-size:30px; height: 50px">
           <h1>敏感用户全息画像构建及个性化引导</h1>
         </div>
         <div class="main">
@@ -189,9 +101,95 @@
         <!--            <h2 style="margin-left:40%">多模态用户认知干预系统架构</h2>-->
         <!--          </el-tab-pane>-->
 
+
+        <div style="text-align:center; font-size:30px; height: 50px">
+          <h1>舆情事件收集</h1>
+        </div>
+        <div class="main">
+          <el-row :gutter="20" style="margin-left: 5%; margin-right: 5%; height: 40%">
+            <el-col :span="6">
+              <div style="text-align: center; border-radius: 4px;">
+                <img src="../../static/image/luangang.jpg" style="width:150px;margin: 0 auto;">
+              </div>
+            </el-col>
+
+            <el-col :span="6">
+              <div style="text-align: center; border-radius: 4px;">
+                <img src="../../static/image/election.jpg" style="width:150px;margin: 0 auto;">
+              </div>
+
+            </el-col>
+
+            <el-col :span="6">
+              <div style="text-align: center; border-radius: 4px;">
+                <img src="../../static/image/kaoyan.jpg" style="width:150px;margin: 0 auto;">
+              </div>
+
+            </el-col>
+
+            <el-col :span="6">
+              <div style="text-align: center; border-radius: 4px;">
+                <img src="../../static/image/virus.jpg" style="width:150px;margin: 0 auto;">
+              </div>
+
+            </el-col>
+          </el-row>
+          <el-row :gutter="20" style="margin-left: 5%; margin-right: 5%">
+            <el-col :span="6">
+              <router-link to="/EventsDisplay">
+                <div style="text-align: center; padding: 0 50px">
+                  <h3 style="font-size:20px;">
+                    乱港事件
+                  </h3>
+                  <p>
+                    自2019年6月以来，香港反对派和一些激进势力借和平游行集会之名，进行各种激进暴力活动
+                  </p>
+                </div>
+              </router-link>
+            </el-col>
+
+            <el-col :span="6">
+              <router-link to="/EventsDisplay">
+                <div style="text-align: center; padding: 0 50px">
+                  <h3 style="font-size:20px;">
+                    美国大选
+                  </h3>
+                  <p>
+                    当地时间2020年11月3日，美国迎来总统大选日。经过激烈角逐，拜登击败特朗普赢得大选
+                  </p></div>
+              </router-link>
+            </el-col>
+
+            <el-col :span="6">
+              <router-link to="/EventsDisplay">
+                <div style="text-align: center; padding: 0 50px">
+                  <h3 style="font-size:20px;">
+                    高考
+                  </h3>
+                  <p>
+                    2021年6月7日，全国总计1078万考生参加了研究生入学考试
+                  </p></div>
+              </router-link>
+            </el-col>
+
+            <el-col :span="6">
+              <router-link to="/EventsDisplay">
+                <div style="text-align: center; padding: 0 50px">
+                  <h3 style="font-size:20px;">
+                    新冠疫情
+                  </h3>
+                  <p>
+                    2020年新冠疫情的暴发给全球人民生命安全带来严重威胁
+                  </p></div>
+              </router-link>
+            </el-col>
+
+          </el-row>
+        </div>
+        </div>
+
       </div>
     </div>
-  </div>
 </template>
 <script>
 
@@ -239,7 +237,7 @@
   #page {
     height: 1200px;
     margin-top: 10px;
-    padding-top:20px;
+    padding-top: 20px;
     background: #f1f3f7;
     text-align: left;
   }
@@ -272,7 +270,7 @@
     border-width: 5px;
     margin-left: 10%;
     background: #ffffff;
-    color:#ffffff;
+    color: #ffffff;
     border-radius: 3px;
 
     padding-top: 20px;

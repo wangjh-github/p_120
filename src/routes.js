@@ -63,13 +63,13 @@ let routes = [{
   },
     {
     path: '/',
-    name: '舆情事件引导',
+    name: '舆情事件收集',
     component: Home,
     iconCls: 'el-icon-s-custom',
     redirect: '/EventsDisplay',
     leaf: true,//只有一个节点,
     children: [
-      {path: '/EventsDisplay', component: EventsDisplay, name: '舆情事件引导'},
+      {path: '/EventsDisplay', component: EventsDisplay, name: '舆情事件收集'},
 
     ]
   },

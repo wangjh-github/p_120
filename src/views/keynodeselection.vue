@@ -4,7 +4,7 @@
       <h1>{{$route.name}}</h1>
     </div>
     <div id="page">
-      <el-tabs v-model="activeName" @tab-click="handleClick">
+      <el-tabs v-model="activeName" >
         <el-tab-pane label="方法一：最优效率节点选择算法" name="first">
           <keynodes_method1 v-if="'first' === activeName"></keynodes_method1>
         </el-tab-pane>

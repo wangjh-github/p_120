@@ -11,7 +11,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import Mock from './mock'
 Mock.bootstrap();
 import './style/login.css'
-import echarts from 'echarts'
+import * as echarts from 'echarts'
 require('echarts-wordcloud')
 Vue.prototype.$echarts = echarts
 import VueSweetalert2 from './plugins/vue-sweetalert2'

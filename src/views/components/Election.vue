@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-row :gutter="24">
+    <el-row :gutter="20">
       <el-col :span="10">
         <el-container>
           <el-header>
@@ -8,222 +8,281 @@
           </el-header>
           <el-main>
             <div id="main2" style="width: 600px; height: 500px; display: inline-block;">
-           <!-- <word-cloud-chart
-             id="echarts05"
-             :title="chartsTitle[4]"
-             :data="echarts05Data"
-             :width="width"
-             :height="height"
-           /> -->
-           </div>
+              <!-- <word-cloud-chart
+                id="echarts05"
+                :title="chartsTitle[4]"
+                :data="echarts05Data"
+                :width="width"
+                :height="height"
+              /> -->
+            </div>
           </el-main>
         </el-container>
 
         <el-container style="margin-top: 30px">
           <el-header>
-        <p style="font-size: 18px;font-weight:bold;text-align: center;">站点分布</p>
-        </el-header>
-        <el-main>
-        <div id="main1" style="width: 600px; height: 500px; display: inline-block;"></div>
-        <!--        <el-container>-->
-        <!--          <el-header>-->
-        <!--            <p style="font-size: 18px;font-weight:bold;">站点分布</p>-->
-        <!--          </el-header>-->
-        <!--          <el-main>-->
-        <!--            <div id="main1" style="width: 600px; height: 500px; display: inline-block;"></div>-->
-        <!--          </el-main>-->
-        <!--        </el-container>-->
-        </el-main>
+            <p style="font-size: 18px;font-weight:bold;text-align: center;">站点分布</p>
+          </el-header>
+          <el-main>
+            <div id="main1" style="width: 600px; height: 500px; display: inline-block;"></div>
+            <!--        <el-container>-->
+            <!--          <el-header>-->
+            <!--            <p style="font-size: 18px;font-weight:bold;">站点分布</p>-->
+            <!--          </el-header>-->
+            <!--          <el-main>-->
+            <!--            <div id="main1" style="width: 600px; height: 500px; display: inline-block;"></div>-->
+            <!--          </el-main>-->
+            <!--        </el-container>-->
+          </el-main>
         </el-container>
       </el-col>
-
 
       <el-col :span="10">
         <el-container>
           <el-header>
             <p style="font-size: 18px;font-weight:bold;">相关贴子</p>
           </el-header>
-          <el-main style="height: 1185px">
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">at this point with as unhinged as Trump is i wouldnt be surprised if barr has joe Biden arrested the day</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">作为特朗普连任竞选的外部律师，钟斯日赢得了数百万美元的收入，该公司的律师已经捐赠了近90美元</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">如果特朗普獲勝，他將在中國為世界其他地區付出巨大的努力，美國大選更關乎中國而非美國本身</p>
-            </el-col>
-            </el-row>
-
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">Trump new fec filings show Trump cash troublesTrump ended sept with</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">一天前，特朗普多次稱他的對手為罪犯，並用同一個詞稱呼自己的記者</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">特朗普阵营9月份在电视广播广告上的花费不到5600万美元，而这一数位接近148万美元</p>
-            </el-col>
-            </el-row>
-            <el-row :type="flex" justify="center" align="middle" style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/weibo.png" style="aligh:middle;width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">尼日利亚人在美国美国大选两周后特朗普关心选票选票就像他们没有钱一样</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 5px;"></div>
-              <img src="../../../static/image/tieba.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">新特朗普刚刚提交了一份档案——6.31亿美元现金在手——1400万美元债务——我们将得到b的全部数位</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">twatus election 7 things we learned after Trump demands Biden be investigated now</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">トランプは新しい反響をかき立てる一方、彼のアドバイザーは狭い世論調査で希望を見る</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">钟斯戴律师事务所（jones day）作为特朗普竞选连任的外部律师，已经赚了数百万美元</p>
-            </el-col>
-            </el-row>
-
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">新闻特朗普竞选委员会预计将只报告约6300万美元，这大约是它的一半</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 5px;"></div>
-              <img src="../../../static/image/tieba.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">新特朗普刚刚提交了一份档案——6.31亿美元现金在手——1400万美元债务——我们将得到b的全部数位</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">tucson mayor demands Trump pay his 2016 bill before rally which is really funny</p>
-            </el-col>
-            </el-row>
-
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/tieba.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">据报道美国总统特朗普宣称拜登将在随心所欲的福克斯访谈中带走上帝</p>
-            </el-col>
-            </el-row>
-
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">大选前两周，特朗普因对拜登的不满，选择了与全国最受欢迎的新闻节目较量</p>
-            </el-col>
-            </el-row>
-
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">《旁觀者》介紹特朗普是否值得連任加入萊昂內爾·施賴弗·奈傑爾·法拉奇·莎拉·伊里亞德（lionel shriver nigel farage sarah elliott）</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">作為特朗普連任競選的外部律師，鐘斯日贏得了數百萬美元的收入，該公司的律師已經捐贈了近90美元</p>
-            </el-col>
-            </el-row>
-            <el-row style="height: 50px">
-            <el-col :span="3">
-              <div style="height: 15px;"></div>
-              <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">
-            </el-col>
-            <el-col :span="20">
-              <p style="font-size: 18px;">独立党特朗普回到关键的宾夕法尼亚州竞选路线，他选择与60奇怪的斗争</p>
-            </el-col>
-            </el-row>
-            
-          </el-main>
         </el-container>
+        <el-main style="height: 1185px">
+          <vueSeamlessScroll :data="hotTopicData" class="scroll" :class-option="classOption">
+            <li v-for="(items, index) in hotTopicData" :key="index">
+              <el-row>
+                <el-col :span="3">
+                  <div>
+                    <a  @click="hrefClick(items.postUrl)">
+                            <span v-if="items.postWebsite === '新浪微博'">
+                                <img height="40px" width="40px"
+                                     src="../../../static/image/weibo.png" alt="...">
+                           </span>
+                      <span v-else-if="items.postWebsite === '百度贴吧'">
+                              <img height="50px" width="50px" src="../../../static/image/tieba.png"
+                                   alt="...">
+                           </span>
+                      <span v-else-if="items.postWebsite === 'twitter'">
+                                 <img height="35px" width="35px"
+                                      src="../../../static/image/twitter.png" alt="...">
+                           </span>
+                      <span v-else>
+                               <img height="35px" width="35px" src="/static/modules/displayboard/img/social-others.svg"
+                                    alt="...">
+                           </span>
+                    </a>
+                  </div>
+                </el-col>
+                <el-col :span="20">
+
+                  <a @click="hrefClick(items.postUrl)" style="margin-top: 0px">
+                    <span style="font-size:20px;white-space: normal">{{items.postTitle}}</span>
+                  </a>
+                  <p>
+                    {{items.postTime}} 来自 {{items.postWebsite}}
+                  </p>
+
+                </el-col>
+              </el-row>
+
+            </li>
+          </vueSeamlessScroll>
+        </el-main>
+
       </el-col>
+
+
+      <!--      <el-col :span="10">-->
+      <!--        <el-container>-->
+      <!--          <el-header>-->
+      <!--            <p style="font-size: 18px;font-weight:bold;">相关贴子</p>-->
+      <!--          </el-header>-->
+      <!--          <el-main style="height: 1185px">-->
+      <!--            <el-row :type="flex" justify="center" align="middle" style="height: 50px">-->
+      <!--              <el-col :span="3">-->
+      <!--                <div style="height: 15px;"></div>-->
+      <!--                <img src="../../../static/image/weibo.png" style="aligh:middle;width:50px;margin: 0 auto;">-->
+      <!--              </el-col>-->
+      <!--              <el-col :span="21">-->
+      <!--                <p style="font-size: 18px;">冒著被捕的危險，我們封鎖了中國駐華府大使館的入口，呼籲香港的人權與自由！#洪克</p>-->
+      <!--              </el-col>-->
+      <!--            </el-row>-->
+      <!--            <el-row style="height: 50px">-->
+      <!--              <el-col :span="3">-->
+      <!--                <div style="height: 5px;"></div>-->
+      <!--                <img src="../../../static/image/tieba.png" style="width:50px;margin: 0 auto;">-->
+      <!--              </el-col>-->
+      <!--              <el-col :span="21">-->
+      <!--                <p style="font-size: 18px;">感謝湯姆·蘭德爾為支持香港而作的精彩作品</p>-->
+      <!--              </el-col>-->
+      <!--            </el-row>-->
+      <!--            <el-row style="height: 50px">-->
+      <!--              <el-col :span="3">-->
+      <!--                <div style="height: 15px;"></div>-->
+      <!--                <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">-->
+      <!--              </el-col>-->
+      <!--              <el-col :span="21">-->
+      <!--                <p style="font-size: 18px;">Blocking the entrance to the Chinese Embassy in Wash, DC as we call for-->
+      <!--                  human rights and freedom in HK! #HongKong ⁦@Stand_w</p>-->
+      <!--              </el-col>-->
+      <!--            </el-row>-->
+      <!--            <el-row style="height: 50px">-->
+      <!--              <el-col :span="3">-->
+      <!--                <div style="height: 15px;"></div>-->
+      <!--                <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">-->
+      <!--              </el-col>-->
+      <!--              <el-col :span="21">-->
+      <!--                <p style="font-size: 18px;">民主主義のためのHKの戦いを支持してくれてありがとう🙏🏼我々の若い活動家は、単に投獄されます.</p>-->
+      <!--              </el-col>-->
+      <!--            </el-row>-->
+      <!--            <el-row style="height: 50px">-->
+      <!--              <el-col :span="3">-->
+      <!--                <div style="height: 15px;"></div>-->
+      <!--                <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">-->
+      <!--              </el-col>-->
+      <!--              <el-col :span="21">-->
+      <!--                <p style="font-size: 18px;">@感谢您与香港站在一起。这是香港另一个悲伤的时刻。任何支持自由、人权、政治的人…</p>-->
+      <!--              </el-col>-->
+      <!--            </el-row>-->
+      <!--            <el-row style="height: 50px">-->
+      <!--              <el-col :span="3">-->
+      <!--                <div style="height: 15px;"></div>-->
+      <!--                <img src="../../../static/image/tieba.png" style="width:50px;margin: 0 auto;">-->
+      <!--              </el-col>-->
+      <!--              <el-col :span="21">-->
+      <!--                <p style="font-size: 18px;">对于自由斗士——曼德拉、国王、刘晓波——来说，监狱是通往民主之路的必然和必要的一部分</p>-->
+      <!--              </el-col>-->
+      <!--            </el-row>-->
+      <!--            <el-row style="height: 50px">-->
+      <!--              <el-col :span="3">-->
+      <!--                <div style="height: 15px;"></div>-->
+      <!--                <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">-->
+      <!--              </el-col>-->
+      <!--              <el-col :span="21">-->
+      <!--                <p style="font-size: 18px;">一名美国人今天加入人权游行，说香港人不仅为香港或自己而战，也为香港人争取人权</p>-->
+      <!--              </el-col>-->
+      <!--            </el-row>-->
+      <!--            &lt;!&ndash; <el-row style="height: 50px">-->
+      <!--            <el-col :span="3">-->
+      <!--              <div style="height: 15px;"></div>-->
+      <!--              <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">-->
+      <!--            </el-col>-->
+      <!--            <el-col :span="21">-->
+      <!--              <p style="font-size: 18px;">不法行為逮捕、迫害された拷問、不必要なIを操作すること</p>-->
+      <!--            </el-col>-->
+      <!--            </el-row> &ndash;&gt;-->
+      <!--            <el-row style="height: 50px">-->
+      <!--              <el-col :span="3">-->
+      <!--                <div style="height: 15px;"></div>-->
+      <!--                <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">-->
+      <!--              </el-col>-->
+      <!--              <el-col :span="21">-->
+      <!--                <p style="font-size: 18px;">@hk_watch why is hong kong giving up the fight for freedom? you are going to-->
+      <!--                  be the new tibet at this rate</p>-->
+      <!--              </el-col>-->
+      <!--            </el-row>-->
+      <!--            <el-row style="height: 50px">-->
+      <!--              <el-col :span="3">-->
+      <!--                <div style="height: 15px;"></div>-->
+      <!--                <img src="../../../static/image/tieba.png" style="width:50px;margin: 0 auto;">-->
+      <!--              </el-col>-->
+      <!--              <el-col :span="21">-->
+      <!--                <p style="font-size: 18px;">每一个旁观者都站在那里无助地看着溺水的女人，直到一个外国人来救她。它代表我…</p>-->
+      <!--              </el-col>-->
+      <!--            </el-row>-->
+      <!--            <el-row style="height: 50px">-->
+      <!--              <el-col :span="3">-->
+      <!--                <div style="height: 15px;"></div>-->
+      <!--                <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">-->
+      <!--              </el-col>-->
+      <!--              <el-col :span="21">-->
+      <!--                <p style="font-size: 18px;">亲爱的，香港人，台湾人和韩国人，你觉得怎么样？如果拜登赢了，中国赢了，美国、香港、台湾、韩国将输。阿拉伯海湾</p>-->
+      <!--              </el-col>-->
+      <!--            </el-row>-->
+      <!--            <el-row style="height: 50px">-->
+      <!--              <el-col :span="3">-->
+      <!--                <div style="height: 15px;"></div>-->
+      <!--                <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">-->
+      <!--              </el-col>-->
+      <!--              <el-col :span="21">-->
+      <!--                <p style="font-size: 18px;">感謝你們為香港的自由和民主所作的努力。希望他們能安全。上帝保佑他們…</p>-->
+      <!--              </el-col>-->
+      <!--            </el-row>-->
+      <!--            <el-row style="height: 50px">-->
+      <!--              <el-col :span="3">-->
+      <!--                <div style="height: 15px;"></div>-->
+      <!--                <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">-->
+      <!--              </el-col>-->
+      <!--              <el-col :span="21">-->
+      <!--                <p style="font-size: 18px;">@frances_sit Thank you their effort for the freedom and democracy in-->
+      <!--                  #HongKong. Hope they can be safe. God bless th…</p>-->
+      <!--              </el-col>-->
+      <!--            </el-row>-->
+      <!--            <el-row style="height: 50px">-->
+      <!--              <el-col :span="3">-->
+      <!--                <div style="height: 15px;"></div>-->
+      <!--                <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">-->
+      <!--              </el-col>-->
+      <!--              <el-col :span="21">-->
+      <!--                <p style="font-size: 18px;">哥伦比亚广播公司今早的乔舒旺格夫、周廷格尼斯和伊凡兰都非常勇敢地为香港的自由而战，但是他们…</p>-->
+      <!--              </el-col>-->
+      <!--            </el-row>-->
+      <!--            <el-row style="height: 50px">-->
+      <!--              <el-col :span="3">-->
+      <!--                <div style="height: 15px;"></div>-->
+      <!--                <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">-->
+      <!--              </el-col>-->
+      <!--              <el-col :span="21">-->
+      <!--                <p style="font-size: 18px;">@BarrySheerman CCP will never allow democracy.#HongKong is the best example-->
+      <!--                  of why we should never trust China.Beijing will n…</p>-->
+      <!--              </el-col>-->
+      <!--            </el-row>-->
+      <!--            <el-row style="height: 50px">-->
+      <!--              <el-col :span="3">-->
+      <!--                <div style="height: 15px;"></div>-->
+      <!--                <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">-->
+      <!--              </el-col>-->
+      <!--              <el-col :span="21">-->
+      <!--                <p style="font-size: 18px;">我在2015年去了香港，我发现自己很喜欢它，因为它有自由感。到底谁有一个钻井平台…</p>-->
+      <!--              </el-col>-->
+      <!--            </el-row>-->
+      <!--            <el-row style="height: 50px">-->
+      <!--              <el-col :span="3">-->
+      <!--                <div style="height: 15px;"></div>-->
+      <!--                <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">-->
+      <!--              </el-col>-->
+      <!--              <el-col :span="21">-->
+      <!--                <p style="font-size: 18px;">@像許多其他被毆打、監禁和流放的香港年輕人一樣，他們的財務狀況也是神聖的…</p>-->
+      <!--              </el-col>-->
+      <!--            </el-row>-->
+
+      <!--            <el-row style="height: 50px">-->
+      <!--              <el-col :span="3">-->
+      <!--                <div style="height: 15px;"></div>-->
+      <!--                <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">-->
+      <!--              </el-col>-->
+      <!--              <el-col :span="21">-->
+      <!--                <p style="font-size: 18px;">@違法な不法行為を操作しているchowtingagnes @ chowtingagnes＠racaconian元の植民地支配。</p>-->
+      <!--              </el-col>-->
+      <!--            </el-row>-->
+      <!--            <el-row style="height: 50px">-->
+      <!--              <el-col :span="3">-->
+      <!--                <div style="height: 15px;"></div>-->
+      <!--                <img src="../../../static/image/twitter.png" style="width:50px;margin: 0 auto;">-->
+      <!--              </el-col>-->
+      <!--              <el-col :span="21">-->
+      <!--                <p style="font-size: 18px;">@business Every core value in HK is eroded by the regime and the new-->
+      <!--                  National Security law. Reporters are losing freedom</p>-->
+      <!--              </el-col>-->
+      <!--            </el-row>-->
+      <!--            <el-row style="height: 50px">-->
+      <!--              <el-col :span="3">-->
+      <!--                <div style="height: 15px;"></div>-->
+      <!--                <img src="../../../static/image/weibo.png" style="width:50px;margin: 0 auto;">-->
+      <!--              </el-col>-->
+      <!--              <el-col :span="21">-->
+      <!--                <p style="font-size: 18px;">看到香港这样我真的很难过！什么时候香港才能重新团结起来，重现辉煌</p>-->
+      <!--              </el-col>-->
+      <!--            </el-row>-->
+      <!--          </el-main>-->
+      <!--        </el-container>-->
+      <!--      </el-col>-->
 
     </el-row>
   </div>
@@ -275,276 +334,216 @@
 
 </template>
 <script>
-  import echarts from "echarts";
-  // import wordCloud from "../../echarts-wordcloud.min.js";
-  // import resize from "./mixins/resize";
-  // import "echarts-wordcloud/dist/echarts-wordcloud";
-  // import "echarts-wordcloud/dist/echarts-wordcloud.min";
-  // let echarts = require('echarts/lib/echarts')
-  // require('echarts-wordcloud');
+    import echarts from "echarts";
+    // import wordCloud from "../../echarts-wordcloud.min.js";
+    // import resize from "./mixins/resize";
+    // import "echarts-wordcloud/dist/echarts-wordcloud";
+    // import "echarts-wordcloud/dist/echarts-wordcloud.min";
+    // let echarts = require('echarts/lib/echarts')
+    // require('echarts-wordcloud');
 
-  // import "echarts/theme/macarons.js"
+    // import "echarts/theme/macarons.js"
 
+    import vueSeamlessScroll from 'vue-seamless-scroll'
 
-  export default {
-    name: "Echarts",
-    // mixins: [resize],
-    // props: {
-    //   className: {
-    //     type: String,
-    //     default: "chart"
-    //   },
-    //   id: {
-    //     type: String,
-    //     default: "chart"
-    //   },
-    //   width: {
-    //     type: String,
-    //     default: "100%"
-    //   },
-    //   height: {
-    //     type: String,
-    //     default: "400px"
-    //   },
-    //   data: {
-    //     type: Array,
-    //     default: []
-    //   },
-    //   title: {
-    //     type: String,
-    //     default: ""
-    //   }
-    // },
-    data() {
-      return {
-        // tableData: [
-        //   {
-        //     source: ,
-        //     content: "#香港理工大学在香港抗议中被围困一年后，现在是一个完全不同的校园。It和其他香港大学都是如此"
+    export default {
+        components: {
+            vueSeamlessScroll
+        },
+        name: "Echarts",
+        // mixins: [resize],
+        // props: {
+        //   className: {
+        //     type: String,
+        //     default: "chart"
         //   },
-        //   {
-        //     source: ,
-        //     content: ""
+        //   id: {
+        //     type: String,
+        //     default: "chart"
         //   },
-        //   {
-        //     source: ,
-        //     content: ""
+        //   width: {
+        //     type: String,
+        //     default: "100%"
         //   },
-        // ],
-        echarts05Data:  [
-        {
-          "name": "特朗普",
-          "value": 15000
-        },
-        {
-          name: "拜登",
-          value: 10081
-        },
-        {
-          name: "美国",
-          value: 9386
-        },
-        {
-          name: "大选",
-          value: 7500
-        },
-        {
-          name: "选举",
-          value: 7500
-        },
-        {
-          name: "总统",
-          value: 6500
-        },
-        {
-          name: "竞选",
-          value: 6500
-        },
-        {
-          name: "律师",
-          value: 6000
-        },
-        {
-          name: "一个",
-          value: 4500
-        },
-        {
-          name: "我们",
-          value: 3800
-        },
-        {
-          name: "2020",
-          value: 3000
-        },
-        {
-          name: "两周",
-          value: 2500
-        },
-        {
-          name: "他们",
-          value: 2300
-        },
-        {
-          name: "赢得",
-          value: 2000
-        },
-        {
-          name: "琼斯",
-          value: 1900
-        },
-        {
-          name: "最后",
-          value: 1800
-        },
-        {
-          name: "如果",
-          value: 1700
-        },
-        {
-          name: "捐款",
-          value: 1600
-        },
-        {
-          name: "支持",
-          value: 1500
-        },
-        {
-          name: "巴尔",
-          value: 1200
-        },
-        {
-          name: "显示",
-          value: 1100
-        },
-        {
-          name: "拒绝",
-          value: 900
-        },
-        {
-          name: "团队",
-          value: 800
-        },
-        {
-          name: "对手",
-          value: 700
-        },
-      ],
-        chart: null
-      };
-      // activeName: 'first'
-    },
-    mounted() {
-
-      let echarts = require("echarts");
-      let myChart = echarts.init(document.getElementById("main1"));
-      let chart2 = echarts.init(document.getElementById("main2"));
-      let option = {
-        tooltip: {
-          trigger: 'item',
-          formatter: '{a} <br/>{b} : {c} ({d}%)'
-        },
-        legend: {
-          orient: 'vertical',
-          left: 'left',
-          data: [ '微博', 'twitter', '贴吧']
-        },
-        series: [
-          {
-            name: '访问来源',
-            type: 'pie',
-            radius: '55%',
-            center: ['50%', '60%'],
-            data: [
-              // {value: 335, name: ''},
-              // {value: 310, name: '邮件营销直接访问'},
-              {value: 12321, name: '微博'},
-              {value: 26564, name: 'twitter'},
-              {value: 12892, name: '贴吧'}
-            ],
-            emphasis: {
-              itemStyle: {
-                shadowBlur: 10,
-                shadowOffsetX: 0,
-                shadowColor: 'rgba(0, 0, 0, 0.5)'
-              }
+        //   height: {
+        //     type: String,
+        //     default: "400px"
+        //   },
+        //   data: {
+        //     type: Array,
+        //     default: []
+        //   },
+        //   title: {
+        //     type: String,
+        //     default: ""
+        //   }
+        // },
+        methods:{
+            hrefClick: function (url) {
+                // window.location.href = url;
+                window.open(url);
             }
-          }
-        ]
-      };
-      let option2 = {
+        },
 
-                    tooltip: {
-                        show: true
-                    },
-                    toolbox: {
-                        right: '40',
-                        show: true,
-                        feature: {
-                          mark: { show: true },
-                          dataView: { show: true, readOnly: true, buttonColor:'#4682B4'},
-                          magicType: {
+        data() {
+            return {
+                // tableData: [
+                //   {
+                //     source: ,
+                //     content: "#香港理工大学在香港抗议中被围困一年后，现在是一个完全不同的校园。It和其他香港大学都是如此"
+                //   },
+                //   {
+                //     source: ,
+                //     content: ""
+                //   },
+                //   {
+                //     source: ,
+                //     content: ""
+                //   },
+                // ],
+                hotTopicData: [],
+                classOption: {
+                    step: 0.5, // 数值越大速度滚动越快
+                    limitMoveNum: 10, // 开始无缝滚动的数据量 this.dataList.length
+                    hoverStop: true, // 是否开启鼠标悬停stop
+                    direction: 1, // 0向下 1向上 2向左 3向右
+                    openWatch: true, // 开启数据实时监控刷新dom
+                    singleHeight: 0, // 单步运动停止的高度(默认值0是无缝不停止的滚动) direction => 0/1
+                    singleWidth: 0, // 单步运动停止的宽度(默认值0是无缝不停止的滚动) direction => 2/3
+                    waitTime: 1000 // 单步运动停止的时间(默认值1000ms)
+                },
+                echarts05Data: [],
+                chart: null,
+                word_cloud: []
+            };
+            // activeName: 'first'
+        },
+        mounted() {
+            this.hotTopicData = require('../../../static/display/election.json');
+            this.word_cloud = require('../../../static/display/election_wordcloud.json');
+
+            let echarts = require("echarts");
+            // let echarts = $echarts;
+            let myChart = echarts.init(document.getElementById("main1"));
+            let chart2 = echarts.init(document.getElementById("main2"));
+            let option = {
+                tooltip: {
+                    trigger: 'item',
+                    formatter: '{a} <br/>{b} : {c} ({d}%)'
+                },
+                legend: {
+                    orient: 'vertical',
+                    left: 'left',
+                    data: ['微博', 'twitter', '贴吧']
+                },
+                series: [
+                    {
+                        name: '访问来源',
+                        type: 'pie',
+                        radius: '55%',
+                        center: ['50%', '60%'],
+                        data: [
+                            // {value: 335, name: ''},
+                            // {value: 310, name: '邮件营销直接访问'},
+                            {value: 15652, name: '微博'},
+                            {value: 32424, name: 'twitter'},
+                            {value: 12112, name: '贴吧'}
+                        ],
+                        // fontSize:100,
+                        label:{
+                          fontSize:20,
+                            color:'#000',
+                        },
+                        emphasis: {
+                            itemStyle: {
+                                shadowBlur: 10,
+                                shadowOffsetX: 0,
+                                shadowColor: 'rgba(0, 0, 0, 0.5)'
+                            }
+                        }
+                    }
+                ]
+            };
+            let option2 = {
+
+                tooltip: {
+                    show: true
+                },
+                toolbox: {
+                    right: '40',
+                    show: true,
+                    feature: {
+                        mark: {show: true},
+                        dataView: {show: true, readOnly: true, buttonColor: '#4682B4'},
+                        magicType: {
                             show: true,
                             type: ['pie', 'funnel']
-                          },
-                          //restore: { show: true },
-                          saveAsImage: { show: true },
+                        },
+                        //restore: { show: true },
+                        saveAsImage: {show: true},
+                    }
+                },
+                series: [{
+                    name: '整体词云图',
+                    type: 'wordCloud',
+                    gridSize: 10,
+                    shape: 'square',
+                    left: 'center',
+                    top: 'center',
+                    width: '100%',
+                    height: '100%',
+                    right: null,
+                    bottom: null,
+
+                    sizeRange: [20, 50],
+                    //size: ['80%', '80%'],
+                    rotationRange: [0, 45],
+                    rotationStep: 45,
+                    textPadding: 0,
+                    autoSize: {
+                        enable: true,
+                        minSize: 30
+                    },
+
+                    textStyle: {
+                        normal: {
+                            color: function () {
+                                return (
+                                    "rgb(" +
+                                    Math.round(Math.random() * 255) +
+                                    ", " +
+                                    Math.round(Math.random() * 255) +
+                                    ", " +
+                                    Math.round(Math.random() * 255) +
+                                    ")"
+                                );
+                            }
                         }
                     },
-                    series: [{
-                        name: '整体词云图',
-                        type: 'wordCloud',
-                        gridSize: 10,
-                        sizeRange: [20, 50],
-                        //size: ['80%', '80%'],
-                        rotationRange: [ 0, 45],
-                        rotationStep: 45,
-                        textPadding: 0,
-                        autoSize: {
-                            enable: true,
-                            minSize: 14
-                        },
 
-                        textStyle: {
-                          normal: {
-                            color: function() {
-                              return (
-                                "rgb(" +
-                                Math.round(Math.random() * 255) +
-                                ", " +
-                                Math.round(Math.random() * 255) +
-                                ", " +
-                                Math.round(Math.random() * 255) +
-                                ")"
-                              );
-                            }
-                          }
-                        },
+                    data: this.word_cloud
+                }]
+            };
+            myChart.setOption(option);
+            chart2.setOption(option2);
 
-                        data: [{name:"特朗普",value:24300},{name:"拜登",value:7500},{name:"美国",value:6700},{name:"大选",value:5000},{name:"选举",value:4200},{name:"总统",value:3100},{name:"竞选",value:2900},{name:"律师",value:2800},{name:"一个",value:2800},{name:"我们",value:2000},{name:"2020",value:2000},{name:"两周",value:1400},{name:"他们",value:1400},{name:"赢得",value:1400},{name:"琼斯",value:1300},{name:"最后",value:1300},{name:"连任",value:1200},{name:"如果",value:1200},{name:"捐款",value:1200},{name:"已经",value:1100},{name:"支持",value:1100},{name:"可能",value:1100},{name:"巴尔",value:1100},{name:"显示",value:1000},{name:"拒绝",value:1000},{name:"希望",value:1000},{name:"获胜",value:1000},{name:"个人",value:900},{name:"2016",value:900},{name:"团队",value:900},{name:"现在",value:900},{name:"知道",value:900},{name:"亿美元",value:800},{name:"万美元",value:800},{name:"中国",value:800},{name:"包括",value:800},{name:"对手",value:800},{name:"这次",value:800},{name:"不是",value:800},{name:"选票",value:700},{name:"现金",value:700},{name:"经济",value:700},{name:"调查",value:700},{name:"选民",value:700},{name:"候选人",value:700},{name:"辩论",value:700},{name:"Trump",value:700},{name:"投票",value:700},{name:"需要",value:700},{name:"呼吁",value:700}]
+            // this.initChart();
 
-                    }]
-      };
-      myChart.setOption(option);
-      chart2.setOption(option2);
+            window.addEventListener('resize', function () {
+                myChart.resize()
+            });
 
-      // this.initChart();
-
-      window.addEventListener('resize', function () {
-        myChart.resize()
-      });
-
-    },
-    // beforeDestroy() {
-    //   if (!this.chart) {
-    //     return;
-    //   }
-    //   this.chart.dispose();
-    //   this.chart = null;
-    // },
+        },
+        // beforeDestroy() {
+        //   if (!this.chart) {
+        //     return;
+        //   }
+        //   this.chart.dispose();
+        //   this.chart = null;
+        // },
 
 
-
-  };
+    };
 
 </script>
 <style>
@@ -566,6 +565,47 @@
     color: #333;
   }
 
+  .scroll {
+    height: 100%;
+    overflow: hidden;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  .scroll li {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+  }
+
+  .scroll li a {
+    font-size: 20px;
+    color: #000000;
+    /*height: 2.6vh;*/
+    /*line-height: 2.6vh;*/
+    text-decoration: none;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*width: calc(100% - 8vw);*/
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+
+  .scroll li a:hover {
+    text-decoration: underline;
+  }
+
+  .scroll li .time {
+    font-size: .8vw;
+    display: inline-block;
+    width: 8vw;
+    vertical-align: middle;
+    color: #9599a0 !important;
+    height: 2.6vh;
+    line-height: 2.6vh;
+  }
+
   /*body > .el-container {*/
   /*  margin-bottom: 40px;*/
   /*}*/
@@ -583,8 +623,8 @@
   /*  line-height: 320px;*/
   /*}*/
 
-  .el-row{
-    height: 100%;
-  }
+  /*.el-row{*/
+  /*  height: 100%;*/
+  /*}*/
 
 </style>

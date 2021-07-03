@@ -40,7 +40,30 @@
                   <el-col :span="8"><input type="checkbox" name="category" value="@美國駐港總領事館" />美國駐港總領事館</el-col>
                 </div>
                 <div style="margin-left: 550px;line-height: 50px;">
-                  <input id="btnOperate" type="button" value="选择" v-on:click="fabu()" style="font-size: 18px" />
+                  <input id="btnOperate" type="button" value="选择" v-on:click="weibofabu()" style="font-size: 18px" />
+                </div>
+              </div>
+              <div class="dialog" name="dialog1" id="dialog1">
+                <div style="margin-top: 20px;line-height: 50px;font-size: 18px;  ">
+                  请选择需要进行文本推送的用户：
+                </div>
+                <div style="margin-left: 15px;line-height: 50px;font-size: 18px">
+                  <el-col :span="8">
+                    <input type="checkbox" name="category1" value="@LucasLi18367932" />@LucasLi18367932
+                  </el-col>
+                  <el-col :span="8">
+                    <input type="checkbox" name="category1" value="@lzf1326" />@lzf1326
+                  </el-col>
+                  <el-col :span="8"><input type="checkbox" name="category1" value="@hey89774439" />@hey89774439</el-col>
+                </div>
+                <div style="margin-left: 15px;line-height: 50px;font-size: 18px">
+                  <el-col :span="8">
+                    <input type="checkbox" name="category1" value="@linzhongping1" />@linzhongping1</el-col>
+                  <el-col :span="8"><input type="checkbox" name="category1" value="@rio42108238" />@rio42108238</el-col>
+                  <el-col :span="8"><input type="checkbox" name="category1" value="@Heihaierz" />@Heihaierz</el-col>
+                </div>
+                <div style="margin-left: 550px;line-height: 50px;">
+                  <input id="btnOperate" type="button" value="选择" v-on:click="twitter2()" style="font-size: 18px" />
                 </div>
               </div>
               <div id="table1">
@@ -59,10 +82,10 @@
                         <div style="font-size: 18px">{{item.content}}</div>
                       </td>
                       <td class="tdx" :class="{greyback: item.id!=-1}">
-                        <button v-on:click="runpy('text'+item.id)" class="fabubutton" type="button" style="font-size: 18px">微博发布</button>
-                        <button v-on:click="runpy('text'+item.id)" class="fabubutton" type="button" style="font-size: 18px">Twitter 发布</button>
-                        <button v-on:click="runpy('text'+item.id)" class="fabubutton" type="button" style="font-size: 18px">Twitter 私聊</button>
-                        <button v-on:click="runpy('text'+item.id)" class="fabubutton" type="button" style="font-size: 18px">Reddit 发布</button>
+                        <button v-on:click="runpy2('text'+item.id)" class="fabubutton" type="button" style="font-size: 18px">微博发布</button>
+                        <button v-on:click="twitter1('text'+item.id)" class="fabubutton" type="button" style="font-size: 18px">Twitter 发布</button>
+                        <button v-on:click="runpy1('text'+item.id)" class="fabubutton" type="button" style="font-size: 18px">Twitter 私聊</button>
+                        <button v-on:click="reddit('text'+item.id)" class="fabubutton" type="button" style="font-size: 18px">Reddit 发布</button>
                       </td>
                     </tr>
                   </tbody>
@@ -96,23 +119,123 @@ export default {
     }
   },
   methods: {
-    runpy: function(id) {
+    twitter1: function(id) {
       var str = id
-
-
       console.log(str.length);
       if (str.length == 6) {
-        this.runid = str.substring(str.length - 2, str.length) - 1
+        this.runid = str.substring(str.length - 2, str.length)
+      } else if (str.length == 5) {
+        this.runid = str.substring(str.length - 1, str.length)
+      }
+      var fabutxts = []
+      var siliaotxts = []
+      fabutxts.push(this.listObj[this.runid].content)
+      $.ajax({
+        url: "http://127.0.0.1:8000/text_joint", //the page containing php script
+        type: "POST",
+        contentType: "application/json", //request type
+        crossDomain: true,
+        data: JSON.stringify({
+          'fabutxts': fabutxts,
+          'siliaotxts': siliaotxts
+        }),
+        success: function(result) {
+          this.$alert('发布成功');
+          this.fabutxts = [];
+          this.siliaotxts = [];
+        }
+      })
+
+    },
+
+    twitter2: function() {
+      var fabutxts = []
+      var siliaotxts = []
+      var items = document.getElementsByName("category1");
+      for (var i = 0; i < items.length; i++) {
+        if (items[i].checked) {
+          var temptxt = "" + items[i].value + "/" + this.listObj[this.runid].content
+          siliaotxts.push(temptxt)
+        }
+      }
+
+      for (var i = 0; i < items.length; i++) {
+        items[i].checked = false
+      }
+      /*      $(".dialog").hide()*/
+      document.getElementById("dialog1").style.display = 'none';
+      $.ajax({
+        url: "http://127.0.0.1:8000/text_joint", //the page containing php script
+        type: "POST",
+        contentType: "application/json", //request type
+        crossDomain: true,
+        data: JSON.stringify({
+          'fabutxts': fabutxts,
+          'siliaotxts': siliaotxts
+        }),
+        success: function(result) {
+          this.$alert('私聊成功');
+          this.fabutxts = [];
+          this.siliaotxts = [];
+        }
+      })
+
+    },
+
+    reddit: function(id) {
+      var str = id
+      console.log(str.length);
+      if (str.length == 6) {
+        this.runid = str.substring(str.length - 2, str.length)
+      } else if (str.length == 5) {
+        this.runid = str.substring(str.length - 1, str.length)
+      }
+      $.ajax({
+        url: "http://127.0.0.1:8000/image_joint", //the page containing php script
+        type: "POST",
+        contentType: "application/json", //request type
+        crossDomain: true,
+        data: JSON.stringify({
+          'image_name': '',
+          'title': this.listObj[this.runid].content,
+          'community': "Hong_Kong"
+        }),
+        success: function(result) {
+          alert("发布成功");
+        }
+      })
+
+    },
+
+    runpy1: function(id) {
+      var str = id
+      console.log(str.length);
+      if (str.length == 6) {
+        this.runid = str.substring(str.length - 2, str.length)
+        document.getElementById("dialog1").style.display = 'block';
+      } else if (str.length == 5) {
+        this.runid = str.substring(str.length - 1, str.length)
+        document.getElementById("dialog1").style.display = 'block';
+      }
+
+
+
+    },
+    runpy2: function(id) {
+      var str = id
+      console.log(str.length);
+      if (str.length == 6) {
+        this.runid = str.substring(str.length - 2, str.length)
         document.getElementById("dialog").style.display = 'block';
       } else if (str.length == 5) {
-        this.runid = str.substring(str.length - 1, str.length) - 1
+        this.runid = str.substring(str.length - 1, str.length)
         document.getElementById("dialog").style.display = 'block';
       }
 
 
 
     },
-    fabu: function() {
+    weibofabu: function(id) {
       var arr = "";
       var items = document.getElementsByName("category");
       for (var i = 0; i < items.length; i++) {
@@ -120,7 +243,7 @@ export default {
           arr = arr + items[i].value
         }
       }
-      arr = this.txt[this.runid] + arr
+      arr = this.listObj[this.runid].content + arr
       console.log(arr)
       for (var i = 0; i < items.length; i++) {
         items[i].checked = false
@@ -131,9 +254,9 @@ export default {
       console.log($('#app'));
 
       $.ajax({
-        url: "http://39.102.48.39:8090/yqdata/text_generation/post_text", //the page containing php script  
+        url: "http://39.102.48.39:8090/yqdata/text_generation/post_text", //the page containing php script
         type: "POST",
-        contentType: "application/json", //request type  
+        contentType: "application/json", //request type
         crossDomain: true,
         data: JSON.stringify({
           'text': arr,
@@ -190,7 +313,7 @@ export default {
       txtcount=21;
     }
     this.listObj = txtjson[langkey][emokey];
-    console.log(this.listObj) 
+    console.log(this.listObj)
     for (var i = 0;; i++) {
         // 只生成10个随机数
         if (this.random_list.length < 10) {
@@ -361,5 +484,16 @@ button {
   /*  line-height: 200px;*/
   display: none;
 }
-
+.dialog1 {
+  width: 700px;
+  height: 250px;
+  background-color: white;
+  border: solid 2px black;
+  color: black;
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  /*  line-height: 200px;*/
+  display: none;
+}
 </style>
